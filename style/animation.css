@@ -1,0 +1,9 @@
+#main .swiper-wrapper .intro .bg_ani{
+    animation: bg_ani 15s linear infinite;
+}
+
+
+@keyframes bg_ani {
+    0% {background-position-x: 0;}
+    100% {background-position-x: -1000px;}
+}

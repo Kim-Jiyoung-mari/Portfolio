@@ -1,0 +1,178 @@
+/* ===================================== 헤더 */
+.h_bg {
+    width: 100%; padding: 20px 80px;
+    position: fixed; z-index: 999;
+}
+.h_bg header {
+    width: 1500px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.h_bg header nav {}
+.h_bg header nav > ul {}
+.h_bg header nav > ul li {float: left; padding-right: 50px;}
+.h_bg header nav > ul li:last-child {padding: 0;}
+.h_bg header nav > ul li a {}
+.h_bg header nav > ul li .nav_active {
+    background-color: #222; color: #FFF;
+    padding: 10px 20px;
+}
+.h_bg header .h_right {}
+.h_bg header .h_right > a {font-weight: 600; line-height: 1.6;}
+
+/* ===================================== 그룹 선택자 */
+.h_bg header nav > ul li a,
+.h_bg header .h_right > a {font-weight: 600; line-height: 1.6;}
+
+/* ===================================== 공통스와이퍼 */
+#main {width: 100%; height: 100vh;}
+#main .swiper-wrapper {}
+#main .swiper-wrapper .swiper-slide {}
+
+/* ===================================== 메인 1행 인트로*/
+#main .swiper-wrapper .intro {}
+#main .swiper-wrapper .intro h1 {
+    width: 530px; margin: 140px auto;
+}
+#main .swiper-wrapper .intro h1 > img {width: 100%;}
+#main .swiper-wrapper .intro .bg_ani {
+    background: url(../image/intro.png) repeat-x;
+    width: 100%; height: 200px;
+}
+
+/* ===================================== 메인 2행 프로필*/
+#main .swiper-wrapper .profile {
+    padding: 134px 0;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    width: 1500px; margin: 0 auto; 
+}
+/* ===================================== 메인 2행 프로필 (왼쪽)*/
+#main .swiper-wrapper .profile .left {}
+#main .swiper-wrapper .profile .left .idimg {width: 300px; padding-bottom: 20px;}
+#main .swiper-wrapper .profile .left .idimg > img {width: 100%;}
+#main .swiper-wrapper .profile .left .about {}
+#main .swiper-wrapper .profile .left .about h3 {}
+#main .swiper-wrapper .profile .left .about h3 .about_txt {}
+#main .swiper-wrapper .profile .left .about h3 .about_txt > li {}
+#main .swiper-wrapper .profile .left .about h3 .about_txt > li > a {}
+/* ===================================== 메인 2행 프로필 (오른쪽)*/
+#main .swiper-wrapper .profile .right {
+    width: calc(100% - 400px);
+}
+
+/* ===================================== 프로필 공통/모든 선택자*/
+#main .swiper-wrapper .profile > * h3 {
+    padding-bottom: 20px;
+    font-size: 1.44rem; font-weight: 500; line-height: 1.6;
+}
+#main .swiper-wrapper .profile > * li {
+    padding-bottom: 10px; line-height: 1.6;
+}
+
+/* =========================================================프로필 (오른쪽-위)*/
+#main .swiper-wrapper .profile .right .right_top {
+    text-align: center; margin-bottom: 120px;
+}
+#main .swiper-wrapper .profile .right .right_top > h2 {
+    font-size: 2.69rem; font-weight: 400; line-height: 1.6;
+    padding-bottom: 26px;
+}
+#main .swiper-wrapper .profile .right .right_top > p {
+    font-size: 1.44rem; font-weight: 500; line-height: 1.6;
+}
+#main .swiper-wrapper .profile .right .right_top > p > span {font-size: 1.25rem;}
+/* =========================================================프로필 (오른쪽-아래)*/
+#main .swiper-wrapper .profile .right .right_btm {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#main .swiper-wrapper .profile .right .right_btm .btm_left {}
+/* =========================================================프로필 (오른쪽-경험)*/
+#main .swiper-wrapper .profile .right .right_btm .btm_left .experience {margin-bottom: 50px;}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .experience > h3 {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .experience > .experience_txt {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .experience > .experience_txt > li {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .experience > .experience_txt > li > em {
+    font-weight: 600; line-height: 1.6;
+    padding-right: 20px;
+}
+/* =========================================================프로필 (오른쪽-라이센스)*/
+#main .swiper-wrapper .profile .right .right_btm .btm_left .license {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .license > h3 {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .license > .license_txt {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .license > .license_txt > li {}
+/* =========================================================프로필 (오른쪽-스킬)*/
+#main .swiper-wrapper .profile .right .right_btm .btm_skills {
+    width: calc(100% - 640px);
+}
+#main .swiper-wrapper .profile .right .right_btm .btm_skills > h3 {padding-bottom: 50px;}
+#main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt {
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+}
+#main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li {
+    width: 100px; text-align: center;
+    padding-bottom: 25px;
+}
+#main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li {line-height: 1.6;}
+#main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li > img {width: 100%;}
+
+/* ===================================== 메인 3행 프로젝트-안다르*/
+#main .swiper-wrapper .andar {
+    margin: 0;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#main .swiper-wrapper .andar .project_info {
+    width: 775px; position: relative;
+}
+#main .swiper-wrapper .andar .project_info .pj_contents {
+    position: absolute; left: 214px; top: 219px;
+}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_title > h2 {
+    font-size: 2.69rem; font-weight: 400; line-height: 1.6;
+}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_title > .pj_txt {
+    color: #AAA; line-height: 1.6;
+}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail {margin: 80px 0;}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .pj_con {padding-bottom: 15px;}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .pj_con > li {line-height: 1.6;}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .reponsive {
+    display: flex;
+}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .reponsive > li {
+    width: 150px;
+    padding: 5px 15px; text-align: center;
+    border-bottom: 1px solid #aaa; 
+    font-weight: 600; line-height: 1.6; color: #AAA;
+}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .reponsive > li:nth-child(2){margin: 0 10px;}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > a {line-height: 1.6;}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .proto {
+    background-color: #222; color: #FFF;
+    padding: 10px 15px; border-radius: 10px; margin-right: 10px;
+}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .before {
+    border: 1px solid #F5F5F5;
+    padding: 10px 15px; border-radius: 10px;
+}
+#main .swiper-wrapper .andar .project_img {
+    background-color: #FFD7C1; width: calc(100% - 775px);
+    position: relative;
+}
+#main .swiper-wrapper .andar .project_img img{position: absolute; left: 70px; top: 104px;}
+
+/* ===================================== 메인 8행 아웃트로*/
+#main .swiper-wrapper .outro {
+    width: 320px; margin: 210px auto;
+    
+}
+#main .swiper-wrapper .outro > h3 {
+    text-align: center;
+    font-size: 1.44rem; font-weight: 500; line-height: 1.6;
+}
+#main .swiper-wrapper .outro > .selfca {width: 300px; padding: 40px 0; text-align: center;}
+#main .swiper-wrapper .outro > .selfca > img {width: 100%;}
+#main .swiper-wrapper .outro > .about_txt {
+    position: relative; left: 75px;
+}
+#main .swiper-wrapper .outro > .about_txt > li {line-height: 1.6;}
