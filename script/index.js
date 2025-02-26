@@ -3,6 +3,7 @@ const main = new Swiper('#main',{
     mousewheel:true,
     direction:'vertical',
     behavior:'smooth',
+    speed: 1000,
 });
 
 const bnrSlide = new Swiper('.design .left .banner',{
@@ -34,7 +35,8 @@ const detailSlide = new Swiper('.design .right .detail',{
 // =========================== nav 클릭이벤트
 const nav = document.querySelectorAll('nav a');
 const contact = document.querySelector('.h_right')
-console.log(nav)
+const design = document.querySelector('nav li:nth-child(4) a')
+console.log(design)
 
 function navRest(){
     for(let i of nav) i.classList.remove('nav_active');
@@ -54,7 +56,11 @@ nav.forEach((t, i)=>{
     })
 })
 
-contact.addEventListener('click',function(e){ //3행 소개영역으로 이동
+design.addEventListener('click',function(e){ //3행 소개영역으로 이동
+    e.preventDefault();
+    main.slideTo(6, 1000);
+})
+contact.addEventListener('click',function(e){ //7행 소개영역으로 이동
     e.preventDefault();
     main.slideTo(7, 1000);
 })

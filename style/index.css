@@ -138,60 +138,134 @@
 #main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li {line-height: 1.6;}
 #main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li > img {width: 100%;}
 
-/* ===================================== 메인 3행 프로젝트-안다르*/
-#main .swiper-wrapper .andar {
+/* ===================================== 리디자인 프로젝트 (공통) */
+#main .swiper-wrapper #redesign {
     margin: 0;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
-#main .swiper-wrapper .andar .project_info {
+#main .swiper-wrapper #redesign .project_info {
     width: 775px; position: relative;
 }
-#main .swiper-wrapper .andar .project_info .pj_contents {
+#main .swiper-wrapper #redesign .project_info .pj_contents {
     position: absolute; left: 214px; top: 219px;
 }
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_title {}
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_title > h2 {
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_title > h2 {
     font-size: 2.69rem; font-weight: 400; line-height: 1.6;
 }
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_title > .pj_txt {
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_title > .pj_txt {
     color: #AAA; line-height: 1.6;
 }
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail {margin: 80px 0;}
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .pj_con {padding-bottom: 15px;}
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .pj_con > li {line-height: 1.6;}
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .reponsive {
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail {margin: 80px 0;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con {padding-bottom: 15px;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con > li {line-height: 1.6;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive {
     display: flex;
 }
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .reponsive > li {
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > li {
     width: 150px;
     padding: 5px 15px; text-align: center;
     border-bottom: 1px solid #aaa; 
     font-weight: 600; line-height: 1.6; color: #AAA;
 }
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .reponsive > li:nth-child(2){margin: 0 10px;}
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn {}
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > a {line-height: 1.6;}
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .proto {
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > li:nth-child(2){margin: 0 10px;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > a {line-height: 1.6;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .proto {
     background-color: #222; color: #FFF;
     padding: 10px 15px; border-radius: 10px; margin-right: 10px;
     transition: all 0.8s;
 }
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .proto:hover{
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .proto:hover{
     padding: 10px 30px;
 }
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .before {
-    background-color: #FFD7C1;
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .before {
     padding: 10px 15px; border-radius: 10px;
     transition: all 0.8s;
 }
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .before:hover{
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .before:hover{
     padding: 10px 30px;
 }
-#main .swiper-wrapper .andar .project_img {
-    background-color: #FFD7C1; width: calc(100% - 775px);
-    position: relative;
+#main .swiper-wrapper #redesign .project_img {
+    width: calc(100% - 775px);position: relative;
 }
-#main .swiper-wrapper .andar .project_img img{position: absolute; left: 70px; top: 104px;}
+#main .swiper-wrapper #redesign .project_img img{position: absolute; left: 70px; top: 104px;}
+
+/* ===================================== 메인 3행 프로젝트-안다르*/
+#main .swiper-wrapper .andar {}
+#main .swiper-wrapper .andar .project_info {}
+#main .swiper-wrapper .andar .project_info .pj_contents {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_title > h2 {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_title > .pj_txt {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .pj_con {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .pj_con > li {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .reponsive {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .reponsive > li {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > a {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .proto {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .before {background-color: #FFD7C1;}
+#main .swiper-wrapper .andar .project_img {background-color: #FFD7C1; }
+#main .swiper-wrapper .andar .project_img img{}
+
+/* ===================================== 메인 4행 프로젝트-플리토*/
+#main .swiper-wrapper .flito {}
+#main .swiper-wrapper .flito .project_info {}
+#main .swiper-wrapper .flito .project_info .pj_contents {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_title > h2 {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_title > .pj_txt {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .pj_con {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .pj_con > li {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .reponsive {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .reponsive > li {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > a {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > .proto {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > .before {background-color: #F1E9FF;}
+#main .swiper-wrapper .flito .project_img {background-color: #F1E9FF; }
+#main .swiper-wrapper .flito .project_img img{}
+
+/* ===================================== 메인 5행 프로젝트-마데카프라임*/
+#main .swiper-wrapper .prime {}
+#main .swiper-wrapper .prime .project_info {}
+#main .swiper-wrapper .prime .project_info .pj_contents {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_title > h2 {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_title > .pj_txt {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .pj_con {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .pj_con > li {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .reponsive {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .reponsive > li {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > a {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .proto {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .before {background-color: #8787A1;}
+#main .swiper-wrapper .prime .project_img {background-color: #8787A1; }
+#main .swiper-wrapper .prime .project_img img{}
+
+/* ===================================== 메인 6행 프로젝트-오뚜기몰*/
+#main .swiper-wrapper .otuki {}
+#main .swiper-wrapper .otuki .project_info {}
+#main .swiper-wrapper .otuki .project_info .pj_contents {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_title > h2 {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_title > .pj_txt {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .pj_con {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .pj_con > li {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .reponsive {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .reponsive > li {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > a {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > .proto {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > .before {background-color: #FBF2C4;}
+#main .swiper-wrapper .otuki .project_img {background-color: #FBF2C4; }
+#main .swiper-wrapper .otuki .project_img img{}
 
 /* ===================================== 메인 7행 디자인*/
 #main .swiper-wrapper .design {}
@@ -245,7 +319,7 @@
     width: 100%; transition: all 0.5s;
 }
 #main .swiper-wrapper .design .contents .right .detail .swiper-wrapper .de > img:hover {
-    transform: rotate(3deg)
+    transform: rotate(2deg)
 }
 #main .swiper-wrapper .design .contents .right .detail .swiper-pagination-bullet {}
 #main .swiper-wrapper .design .contents .right .detail .swiper-pagination-bullet-active {
@@ -266,7 +340,7 @@
 
 /* ===================================== 메인 8행 아웃트로*/
 #main .swiper-wrapper .outro {
-    width: 320px; margin: 210px auto;
+    width: 350px; margin: 210px auto;
     
 }
 #main .swiper-wrapper .outro > h3 {
@@ -275,7 +349,12 @@
 }
 #main .swiper-wrapper .outro > .selfca {width: 300px; padding: 40px 0; text-align: center;}
 #main .swiper-wrapper .outro > .selfca > img {width: 100%;}
-#main .swiper-wrapper .outro > .about_txt {
-    position: relative; left: 75px;
+#main .swiper-wrapper .outro .info {
+    width: 300px;
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-around; align-items: flex-end;
 }
-#main .swiper-wrapper .outro > .about_txt > li {line-height: 1.6;}
+#main .swiper-wrapper .outro .info .qrcode {width: 100px;}
+#main .swiper-wrapper .outro .info .qrcode > img {width: 100%;}
+#main .swiper-wrapper .outro .info > .about_txt {}
+#main .swiper-wrapper .outro .info > .about_txt > li {line-height: 1.6;}
