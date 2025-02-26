@@ -31,23 +31,32 @@ const detailSlide = new Swiper('.design .right .detail',{
     }
 })
 
-// 클릭이벤트
+// =========================== nav 클릭이벤트
 const nav = document.querySelectorAll('nav a');
 const contact = document.querySelector('.h_right')
-console.log(contact);
+console.log(nav)
 
-nav.forEach((t, i)=>{ //header-nav click event
+function navRest(){
+    for(let i of nav) i.classList.remove('nav_active');
+};
+navRest();
+nav[0].classList.add('nav_active');
+
+nav.forEach((t, i)=>{ 
     t.addEventListener('click',function(e){
         e.preventDefault();
-        main.slideTo(i, 1000); //클릭한 메뉴와 동일한 index번째 슬라이드로 1초동안 이동
+        navRest();
+        t.classList.add('nav_active');
+        main.slideTo(i, 1000);
         setTimeout(() => {
-            ScrollTrigger.refresh(); // ★ Swiper 로드 후 강제 새로고침 ★
+            ScrollTrigger.refresh();
         }, 0);
     })
 })
+
 contact.addEventListener('click',function(e){ //3행 소개영역으로 이동
     e.preventDefault();
-    main.slideTo(7, 1000); //3번째 슬라이드로 1초동안 이동
+    main.slideTo(7, 1000);
 })
 
 //팝업 띄우기

@@ -14,7 +14,7 @@
 .h_bg header nav > ul li a {}
 .h_bg header nav > ul li .nav_active {
     background-color: #222; color: #FFF;
-    padding: 10px 20px;
+    padding: 7px 20px; border-radius: 20px;
 }
 .h_bg header .h_right {}
 .h_bg header .h_right > a {font-weight: 600; line-height: 1.6;}
@@ -48,6 +48,7 @@
     left: -6px; margin-top: 10px; opacity: 0;
 }
 /* ===================================== 마우스 스크롤 END*/
+
 
 /* ===================================== 메인 1행 인트로*/
 #main .swiper-wrapper .intro {}
@@ -173,13 +174,18 @@
 #main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .proto {
     background-color: #222; color: #FFF;
     padding: 10px 15px; border-radius: 10px; margin-right: 10px;
+    transition: all 0.8s;
 }
 #main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .proto:hover{
-    background-color: #FFF; color: #222;
+    padding: 10px 30px;
 }
 #main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .before {
-    border: 1px solid #F5F5F5;
+    background-color: #FFD7C1;
     padding: 10px 15px; border-radius: 10px;
+    transition: all 0.8s;
+}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .before:hover{
+    padding: 10px 30px;
 }
 #main .swiper-wrapper .andar .project_img {
     background-color: #FFD7C1; width: calc(100% - 775px);
