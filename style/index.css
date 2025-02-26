@@ -28,15 +28,38 @@
 #main .swiper-wrapper {}
 #main .swiper-wrapper .swiper-slide {}
 
+/* ===================================== 마우스 스크롤 START*/
+.scroll_bg {
+    position: fixed; right: 50px; bottom: 50px; z-index: 700;
+    width: 35px; height: 55px; border: 2px solid #222;
+    border-radius: 30px;
+}
+.scroll_bg .scroll {
+    background-color: #222; width: 5px; height: 10px;
+    border-radius: 30px; margin-top: 10px; 
+    position: relative; left: 13px;
+}
+.scroll_bg .scroll::before {
+    position: absolute;
+    content: ''; width: 15px; height: 15px; border: none;
+    border-right: 2px solid #222;
+    border-top: 2px solid #222;
+    transform: translateY(-10px) rotate(135deg) scale(0.4);
+    left: -6px; margin-top: 10px; opacity: 0;
+}
+/* ===================================== 마우스 스크롤 END*/
+
 /* ===================================== 메인 1행 인트로*/
 #main .swiper-wrapper .intro {}
 #main .swiper-wrapper .intro h1 {
     width: 530px; margin: 140px auto;
+    position: relative; top: 30px;
 }
 #main .swiper-wrapper .intro h1 > img {width: 100%;}
 #main .swiper-wrapper .intro .bg_ani {
     background: url(../image/intro.png) repeat-x;
     width: 100%; height: 200px;
+    position: relative; top: 70px;
 }
 
 /* ===================================== 메인 2행 프로필*/
@@ -151,6 +174,9 @@
     background-color: #222; color: #FFF;
     padding: 10px 15px; border-radius: 10px; margin-right: 10px;
 }
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .proto:hover{
+    background-color: #FFF; color: #222;
+}
 #main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .before {
     border: 1px solid #F5F5F5;
     padding: 10px 15px; border-radius: 10px;
@@ -160,6 +186,77 @@
     position: relative;
 }
 #main .swiper-wrapper .andar .project_img img{position: absolute; left: 70px; top: 104px;}
+
+/* ===================================== 메인 7행 디자인*/
+#main .swiper-wrapper .design {}
+#main .swiper-wrapper .design .contents {
+    width: 80%; margin: 150px auto 0; display: block;
+}
+#main .swiper-wrapper .design .contents .left {
+    float: left; width: calc(100% - 450px);
+    position: relative; top: 70px;
+}
+/* =================================================== 디자인프로젝트 : 배너 */
+#main .swiper-wrapper .design .contents .left .banner {
+    width: 100%;  height: 130px; border-radius: 20px;
+    background-color: #F5F5F5;
+    margin-bottom: 30px;
+}
+#main .swiper-wrapper .design .contents .left .banner .swiper-wrapper {
+    transition-timing-function: linear;
+}
+#main .swiper-wrapper .design .contents .left .banner .swiper-wrapper .b {cursor: pointer;}
+#main .swiper-wrapper .design .contents .left .banner .swiper-wrapper .b > img {
+    width: 100%; transition: all 0.5s;
+}
+#main .swiper-wrapper .design .contents .left .banner .swiper-wrapper .b > img:hover {
+    transform: rotate(-7deg);
+}
+
+/* =================================================== 디자인프로젝트 : SNS광고 */
+#main .swiper-wrapper .design .contents .left .sns {
+    width: 100%; height: 350px; border-radius: 20px;
+} 
+#main .swiper-wrapper .design .contents .left .sns .swiper-wrapper {
+    transition-timing-function: linear;
+} 
+#main .swiper-wrapper .design .contents .left .sns .swiper-wrapper .s {cursor: pointer;} 
+#main .swiper-wrapper .design .contents .left .sns .swiper-wrapper .s > img {
+    width: 100%; transition: all 0.5s;
+} 
+#main .swiper-wrapper .design .contents .left .sns .swiper-wrapper .s > img:hover {
+    transform: rotate(-7deg);
+} 
+
+#main .swiper-wrapper .design .contents .right {}
+/* =================================================== 디자인프로젝트 : 상세페이지 */
+#main .swiper-wrapper .design .contents .right .detail {
+    width: 400px; height: 700px; border-radius: 20px;
+}
+#main .swiper-wrapper .design .contents .right .detail .swiper-wrapper {}
+#main .swiper-wrapper .design .contents .right .detail .swiper-wrapper .de {cursor: pointer;}
+#main .swiper-wrapper .design .contents .right .detail .swiper-wrapper .de > img {
+    width: 100%; transition: all 0.5s;
+}
+#main .swiper-wrapper .design .contents .right .detail .swiper-wrapper .de > img:hover {
+    transform: rotate(3deg)
+}
+#main .swiper-wrapper .design .contents .right .detail .swiper-pagination-bullet {}
+#main .swiper-wrapper .design .contents .right .detail .swiper-pagination-bullet-active {
+    background-color: #222;
+}
+/* =================================================== 디자인프로젝트 : 팝업 START */
+#main .popup_bg {
+    position: fixed; left: 0; top: 0;
+    width: 100%; height: 100vh; z-index:800;
+    background: rgba(0,0,0,0.5);
+}
+#main .popup_bg .scroll_wrap {
+    width: 700px; height: 85vh; overflow: auto;
+    margin: 90px auto 0;
+}
+#main .popup_bg .scroll_wrap > img {width: 100%;}
+/* =================================================== 디자인프로젝트 : 팝업 END */
 
 /* ===================================== 메인 8행 아웃트로*/
 #main .swiper-wrapper .outro {

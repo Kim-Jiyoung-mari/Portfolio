@@ -1,9 +1,44 @@
 #main .swiper-wrapper .intro .bg_ani{
-    animation: bg_ani 15s linear infinite;
+    animation: bg_ani 20s linear infinite;
 }
 
 
 @keyframes bg_ani {
     0% {background-position-x: 0;}
     100% {background-position-x: -1000px;}
+}
+
+/* ================================================ 마우스 스크롤 */
+.scroll_bg .scroll::before {
+    animation: scroll 1s infinite alternate linear;
+}
+
+@keyframes scroll {
+    0% {
+        margin-top: 10px;
+        opacity: 0;
+    }
+
+    50% {
+        margin-top: 25px;
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 40px;
+        opacity: 0;
+    }
+}
+
+.scroll_bg {
+    animation: mouse 1s infinite alternate linear;
+}
+
+@keyframes mouse {
+    0% {
+        transform: translateY(0px);
+    }    
+    100% {
+        transform: translateY(-20px);
+    }
 }
