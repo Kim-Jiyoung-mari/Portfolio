@@ -135,7 +135,7 @@
     width: 100px; text-align: center; padding-bottom: 25px;
 }
 #main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li .loading {
-    width: 100px; height: 100px; margin-bottom: 20px;
+    width: 60px; height: 60px; margin-bottom: 20px; position: relative; left: 17px;
 }
 #main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li {line-height: 1.6;}
 

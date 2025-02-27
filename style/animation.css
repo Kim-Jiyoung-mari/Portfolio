@@ -44,10 +44,10 @@
 }
 
 /* 로딩 애니메이션을 위한 원(circle)의 스타일 설정 */
-.btm_skills .skill_txt li .loading .circle-loading {stroke: #eee; stroke-width: 6px;}
+.btm_skills .skill_txt li .loading .circle-loading {stroke: #eee; stroke-width: 7px;}
 .btm_skills .skill_txt li .loading .circle {
     stroke: #565656;
-    stroke-width: 6px;
+    stroke-width: 7px;
     transform: rotate(-90deg);/* 원 -90도 회전하여 시작점 12시 방향 설정 */
     transform-origin: center; /* 중심 기준 원이 회전될 수 있도록 중심설정 */
     stroke-dasharray:360; /* 원의 둘레를 380으로 설정하여 dash 효과를 적용 */
