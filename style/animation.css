@@ -43,4 +43,72 @@
     }
 }
 
-/* 마우스 호버 */
+/* 로딩 애니메이션을 위한 원(circle)의 스타일 설정 */
+.btm_skills .skill_txt li .loading .circle-loading {stroke: #eee; stroke-width: 6px;}
+.btm_skills .skill_txt li .loading .circle {
+    stroke: #565656;
+    stroke-width: 6px;
+    transform: rotate(-90deg);/* 원 -90도 회전하여 시작점 12시 방향 설정 */
+    transform-origin: center; /* 중심 기준 원이 회전될 수 있도록 중심설정 */
+    stroke-dasharray:360; /* 원의 둘레를 380으로 설정하여 dash 효과를 적용 */
+    stroke-dashoffset: 360; /* 초기 상태 설정 */
+}
+
+.btm_skills .skill_txt li .loading1 .circle {
+    animation: photoShop 2s ease both;
+}
+.btm_skills .skill_txt li .loading2 .circle {
+    animation: illustratior 2s 0.2s ease both;
+}
+.btm_skills .skill_txt li .loading3 .circle {
+    animation: premiere 2s 0.4s ease both;
+}
+.btm_skills .skill_txt li .loading4 .circle {
+    animation: figma 2s 0.6s ease both;
+}
+.btm_skills .skill_txt li .loading5 .circle {
+    animation: html 2s 0.8s ease both;
+}
+.btm_skills .skill_txt li .loading6 .circle {
+    animation: css 2s 1s ease both;
+}
+.btm_skills .skill_txt li .loading7 .circle {
+    animation: javascript 2s 1.2s ease both;
+}
+.btm_skills .skill_txt li .loading8 .circle {
+    animation: github 2s 1.4s ease both;
+}
+
+/* 원형 애니메이션 */
+@keyframes photoShop {
+    0% {stroke-dashoffset: 360;}
+    100% {stroke-dashoffset: 75;}
+}
+@keyframes illustratior {
+    0% {stroke-dashoffset: 360;}
+    100% {stroke-dashoffset: 75;}
+}
+@keyframes premiere {
+    0% {stroke-dashoffset: 360;}
+    100% {stroke-dashoffset: 100;}
+}
+@keyframes figma {
+    0% {stroke-dashoffset: 360;}
+    100% {stroke-dashoffset: 110;}
+}
+@keyframes html {
+    0% {stroke-dashoffset: 360;}
+    100% {stroke-dashoffset: 130;}
+}
+@keyframes css {
+    0% {stroke-dashoffset: 360;}
+    100% {stroke-dashoffset: 180;}
+}
+@keyframes javascript {
+    0% {stroke-dashoffset: 360;}
+    100% {stroke-dashoffset: 210;}
+}
+@keyframes github {
+    0% {stroke-dashoffset: 360;}
+    100% {stroke-dashoffset: 100;}
+}

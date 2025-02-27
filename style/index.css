@@ -132,11 +132,12 @@
     display: flex; flex-flow: row wrap; justify-content: space-between;
 }
 #main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li {
-    width: 100px; text-align: center;
-    padding-bottom: 25px;
+    width: 100px; text-align: center; padding-bottom: 25px;
+}
+#main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li .loading {
+    width: 100px; height: 100px; margin-bottom: 20px;
 }
 #main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li {line-height: 1.6;}
-#main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li > img {width: 100%;}
 
 /* ===================================== 리디자인 프로젝트 (공통) */
 #main .swiper-wrapper #redesign {
@@ -244,7 +245,9 @@
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_btn {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > a {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .proto {}
-#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .before {background-color: #8787A1;}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .before {
+    background-color: #8787A1; color: #FFF;
+}
 #main .swiper-wrapper .prime .project_img {background-color: #8787A1; }
 #main .swiper-wrapper .prime .project_img img{}
 
