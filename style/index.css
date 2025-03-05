@@ -344,20 +344,19 @@
 /* ===================================== 메인 8행 아웃트로*/
 #main .swiper-wrapper .outro {
     width: 350px; margin: 210px auto;
-    
 }
 #main .swiper-wrapper .outro > h3 {
     text-align: center;
     font-size: 1.44rem; font-weight: 500; line-height: 1.6;
 }
-#main .swiper-wrapper .outro > .selfca {width: 300px; padding: 40px 0; text-align: center;}
+#main .swiper-wrapper .outro > .selfca {width: 300px; padding: 40px 0; margin: 0 auto;}
 #main .swiper-wrapper .outro > .selfca > img {width: 100%;}
 #main .swiper-wrapper .outro .info {
-    width: 300px;
+    width: 350px;
     display: flex; flex-flow: row nowrap; 
-    justify-content: space-around; align-items: flex-end;
+    justify-content: center; align-items: center;
 }
 #main .swiper-wrapper .outro .info .qrcode {width: 100px;}
 #main .swiper-wrapper .outro .info .qrcode > img {width: 100%;}
-#main .swiper-wrapper .outro .info > .about_txt {}
+#main .swiper-wrapper .outro .info > .about_txt {padding-left: 20px;}
 #main .swiper-wrapper .outro .info > .about_txt > li {line-height: 1.6;}
