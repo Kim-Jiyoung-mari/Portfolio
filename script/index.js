@@ -58,11 +58,11 @@ nav.forEach((t, i)=>{
 
 design.addEventListener('click',function(e){ //3행 소개영역으로 이동
     e.preventDefault();
-    main.slideTo(6, 1000);
+    main.slideTo(5, 1000);
 })
-contact.addEventListener('click',function(e){ //7행 소개영역으로 이동
+contact.addEventListener('click',function(e){ //6행 소개영역으로 이동
     e.preventDefault();
-    main.slideTo(7, 1000);
+    main.slideTo(6, 1000);
 })
 
 //팝업 띄우기
