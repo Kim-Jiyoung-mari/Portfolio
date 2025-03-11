@@ -4,7 +4,7 @@
     position: fixed; z-index: 999;
 }
 .h_bg header {
-    width: 1500px; margin: 0 auto;
+    max-width: 1500px; margin: 0 auto;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
 .h_bg header nav {}
@@ -53,7 +53,7 @@
 /* ===================================== 메인 1행 인트로*/
 #main .swiper-wrapper .intro {}
 #main .swiper-wrapper .intro h1 {
-    width: 530px; margin: 140px auto;
+    max-width: 530px; margin: 140px auto;
     position: relative; top: 30px;
 }
 #main .swiper-wrapper .intro h1 > img {width: 100%;}
@@ -67,17 +67,17 @@
 #main .swiper-wrapper .profile {
     padding: 134px 0;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
-    width: 1500px; margin: 0 auto; 
+    max-width: 1500px; margin: 0 auto; 
 }
 /* ===================================== 메인 2행 프로필 (왼쪽)*/
 #main .swiper-wrapper .profile .left {}
-#main .swiper-wrapper .profile .left .idimg {width: 300px; padding-bottom: 20px;}
+#main .swiper-wrapper .profile .left .idimg {max-width: 300px; padding-bottom: 20px;}
 #main .swiper-wrapper .profile .left .idimg > img {width: 100%;}
 #main .swiper-wrapper .profile .left .about {}
 #main .swiper-wrapper .profile .left .about h3 {}
-#main .swiper-wrapper .profile .left .about h3 .about_txt {}
-#main .swiper-wrapper .profile .left .about h3 .about_txt > li {}
-#main .swiper-wrapper .profile .left .about h3 .about_txt > li > a {}
+#main .swiper-wrapper .profile .left .about .about_txt {}
+#main .swiper-wrapper .profile .left .about .about_txt > li {}
+#main .swiper-wrapper .profile .left .about .about_txt > li > a {}
 /* ===================================== 메인 2행 프로필 (오른쪽)*/
 #main .swiper-wrapper .profile .right {
     width: calc(100% - 400px);
@@ -155,6 +155,7 @@
     font-size: 2.69rem; font-weight: 400; line-height: 1.6;
 }
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_title > .pj_txt {
+    max-width: 450px;
     color: #AAA; line-height: 1.6;
 }
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail {margin: 80px 0;}
@@ -188,9 +189,14 @@
     padding: 10px 30px;
 }
 #main .swiper-wrapper #redesign .project_img {
-    width: calc(100% - 775px);position: relative;
+    width: calc(100% - 775px);
+    position: relative;
 }
-#main .swiper-wrapper #redesign .project_img img{position: absolute; left: 70px; top: 104px;}
+#main .swiper-wrapper #redesign .project_img > p {}
+#main .swiper-wrapper #redesign .project_img > p > img{
+    width: 70%;
+    position: absolute; left: 80px; top: 120px;
+}
 
 /* ===================================== 메인 3행 프로젝트-안다르*/
 #main .swiper-wrapper .andar {}
@@ -311,7 +317,7 @@
     transform: rotate(-7deg);
 } 
 
-#main .swiper-wrapper .design .contents .right {}
+#main .swiper-wrapper .design .contents .right {float: right;}
 /* =================================================== 디자인프로젝트 : 상세페이지 */
 #main .swiper-wrapper .design .contents .right .detail {
     width: 400px; height: 700px; border-radius: 20px;

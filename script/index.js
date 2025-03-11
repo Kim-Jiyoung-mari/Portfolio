@@ -10,8 +10,11 @@ const bnrSlide = new Swiper('.design .left .banner',{
     autoplay:{delay:0},
     loop:true,
     speed:3500,
-    slidesPerView:3,
-    spaceBetween:5,
+    breakpoints:{
+        1400:{slidesPerView:3, direction: 'horizontal'}, /* => 화면 너비 1024 이상 시 2개 표시 (1400~max) */
+        1024:{slidesPerView:1, direction: 'vertical'}, /* => 화면 너비 1024 이상 시 2개 표시 (1024~1400) */
+        480:{slidesPerView:1, direction: 'vertical'}, /* => 화면 너비 480 이상 시 2개 표시 (480~1024) */
+    },
 });
 
 const snsSlide = new Swiper('.design .left .sns',{
@@ -19,18 +22,29 @@ const snsSlide = new Swiper('.design .left .sns',{
     loop:true,
     speed:4500,
     slidesPerView:3,
-    spaceBetween:10,
+    breakpoints:{
+        1400:{slidesPerView:3,},/* => 화면 너비 1024 이상 시 2개 표시 (1400~max) */
+        1024:{slidesPerView:2,},/* => 화면 너비 1024 이상 시 2개 표시 (1024~1400) */
+        500:{slidesPerView:2,}, /* => 화면 너비 480 이상 시 2개 표시 (1024~500) */
+        430:{slidesPerView:1,}, /* => 화면 너비 480 이상 시 2개 표시 (1024~500) */
+    },
 });
 
 const detailSlide = new Swiper('.design .right .detail',{
     autoplay:{delay:2500,},
-    effect:'fade',
+    // effect:'fade',
     loop:true,
+    breakpoints:{
+        1400:{slidesPerView:1,},/* => 화면 너비 1024 이상 시 1개 표시 (1400~max) */
+        480:{slidesPerView:3,}, /* => 화면 너비 480 이상 시 3개 표시 (500~1400) */
+        429:{slidesPerView:1,}, /* => 화면 너비 480 이상 시 1개 표시 (1024~500) */
+    },
     pagination:{
         el:'.design .swiper-pagination',
         type:'bullets'
     }
 })
+
 
 // =========================== nav 클릭이벤트
 const nav = document.querySelectorAll('nav a');
@@ -58,12 +72,13 @@ nav.forEach((t, i)=>{
 
 design.addEventListener('click',function(e){ //3행 소개영역으로 이동
     e.preventDefault();
-    main.slideTo(5, 1000);
-})
+    main.slideTo(6, 1000);
+});
+
 contact.addEventListener('click',function(e){ //6행 소개영역으로 이동
     e.preventDefault();
-    main.slideTo(6, 1000);
-})
+    main.slideTo(7, 1000);
+});
 
 //팝업 띄우기
 const popup_bg = document.querySelector('.popup_bg');
