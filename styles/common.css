@@ -1,0 +1,188 @@
+/* 헤더 */
+.h_bg {}
+.h_bg header {
+    width: 1500px; margin: 0 auto; padding-top: 20px;
+}
+.h_bg header .h_top {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    padding-bottom: 20px;
+}
+.h_bg header .h_top h1 {}
+.h_bg header .h_top h1 > a {}
+.h_bg header .h_top h1 > a > img {}
+.h_bg header .h_top .top_right {}
+.h_bg header .h_top .top_right > a {
+    font-size: 0.88rem; letter-spacing: -0.02rem;
+    border: 2px solid #ffd400; border-radius: 20px;
+    padding: 10px 15px;
+}
+.h_bg header .h_btm {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.h_bg header .h_btm nav {}
+.h_bg header .h_btm nav > ul {} 
+.h_bg header .h_btm nav > ul > li {
+    float: left; padding-right: 35px;}
+.h_bg header .h_btm nav > ul > li:first-child {
+    height: 30px;
+}
+/* 서브메뉴 start */
+.h_bg header .h_btm nav > ul > li .submenu {
+    background-color: #FFF;
+    position: absolute; left: 0; top: 103px; z-index: 10;
+    width: 100%;
+    opacity: 0;
+    height: 0; overflow: hidden;
+    transition: opacity 0.3s;
+}
+.h_bg header .h_btm nav > ul > li:hover .submenu {
+    opacity: 1;
+    height: max-content;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg {
+    width: 1500px; margin: 0 auto; padding: 10px;   
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+/* 서브 - 그룹 */
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_top,
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_btm {
+    display: flex; flex-flow: row nowrap;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg > * dd {
+    display: flex; flex-flow: column;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg > * dt {
+    padding-bottom: 14px;
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg > * a {
+    padding-bottom: 15px;
+    font-size: 0.88rem; letter-spacing: -0.02rem;
+} 
+/* 서브 - 개별 */
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top {
+    padding: 20px 0;
+    border-bottom: 1px solid #d5d5d5;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top dl {
+    padding-right: 30px;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top dl dt {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top dl dd {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top dl dd > a {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_top dl dd > a > span {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm {
+    padding: 20px 0;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm dl {
+    padding-right: 30px;
+}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm dl dt {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm dl dd {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm dl dd > a {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_wrap .sub_btm dl dd > a > span {}
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_bg {} 
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_bg p {} 
+.h_bg header .h_btm nav > ul > li .submenu .submenu_bg .sub_bg p > img {} 
+/* 서브메뉴 end */
+.h_bg header .h_btm nav > ul > li > a {}
+.h_bg header .h_btm nav > ul > li > a > img {}
+.h_bg header .h_btm .btm_right {}
+.h_bg header .h_btm .btm_right > a {padding-left: 25px;}
+.h_bg header .h_btm .btm_right > a > img {}
+
+/* 메인 배너 */
+main .main_bnr {
+    height: 800px; position: relative; margin-bottom: 100px;
+}
+main .main_bnr .swiper-wrapper {}
+main .main_bnr .swiper-wrapper .swiper-slide {}
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt {
+    position: absolute; left: 210px; top: 315px;
+}
+/* 
+애니메이션 적용 될 때 애드클래스 전용 대상을 생성 => 변수?
+애니메이션 속성도 JS 클래스 적용되게 따로 js 전용 클래스명 만들기
+슬라이드 체인지 = 애니메이션이 끝나면 함수 안에 
+클래스 리스트 = classList.add
+*/
+
+main .main_bnr .swiper-wrapper .swiper-slide .js_bnr {
+    animation: transform 1s linear both;
+}
+
+@keyframes transform {
+    0% {transform:translateX(-40px); opacity: 0;}
+    100% {transform:translateX(0px); opacity: 1;}
+}
+
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt > h1 {
+    font-size: 2.19rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.02rem;
+}
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt > h1 em {
+    color: #D3233A;
+    font-size: 2.19rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.02rem;
+}
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt > p {
+    font-size: 1.25rem; line-height: 1.5; letter-spacing: -0.02rem;
+    margin: 20px 0 ;
+}
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt > .link {
+    font-size: 0.94rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.02rem;
+    border: 1px solid #D3233A; padding: 15px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+main .main_bnr .swiper-wrapper .swiper-slide .bnr_txt > .link:hover{
+    background-color: #D3233A; color: #FFF;
+}
+main .main_bnr .progress {}
+main .main_bnr .progress .swiper-scrollbar {bottom: 10px;}
+
+/* 배너 1 */
+main .main_bnr .swiper-wrapper .slide1 {
+    background-image: url(../images/main_bnr.jpg);
+}
+main .main_bnr .swiper-wrapper .slide1 .bnr_txt {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_txt > h1 {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_txt > h1 em {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_txt > p {}
+main .main_bnr .swiper-wrapper .slide1 .bnr_txt > .link {}
+/* 배너 2 */
+main .main_bnr .swiper-wrapper .slide2 {
+    background-image: url(../images/main_bnr002.jpg);
+}
+main .main_bnr .swiper-wrapper .slide2 .bnr_txt {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_txt > h1 {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_txt > h1 em {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_txt > p {}
+main .main_bnr .swiper-wrapper .slide2 .bnr_txt > .link {}
+
+/* 푸터 */
+footer {background-color: #F5F5F5;}
+footer .ft_bg {
+    width: 1600px; margin: 0 auto; padding: 30px 0;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+footer .ft_bg .ft_left {font-size: 0.81rem;}
+footer .ft_bg .ft_left > ul {
+    display: flex; flex-flow: row nowrap;
+}
+footer .ft_bg .ft_left > ul:nth-child(2) {padding: 10px 0;}
+footer .ft_bg .ft_left > ul > li {}
+footer .ft_bg .ft_left > p {padding-top: 10px;}
+footer .ft_bg .ft_right {font-size: 0.81rem;}
+footer .ft_bg .ft_right .cs {}
+footer .ft_bg .ft_right .cs > p:first-child {}
+footer .ft_bg .ft_right .cs > p:last-child {
+    padding-top: 10px;
+    font-size: 0.94rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.02rem;
+}
+footer .ft_bg .ft_right .cs_time {padding: 20px 0;}
+footer .ft_bg .ft_right .cs_time > p {}
+footer .ft_bg .ft_right .cs_time > p:nth-child(2) {padding: 7px 0;}
+footer .ft_bg .ft_right .cs_link {}
+footer .ft_bg .ft_right .cs_link > a {padding-right: 10px;}
+footer .ft_bg .ft_right .cs_link > a:last-child {padding:0;}
+footer .ft_bg .ft_right .cs_link > a > img {}

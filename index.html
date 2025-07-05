@@ -3,378 +3,1077 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- scrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!-- 파비콘 & 글꼴 -->
+    <link rel="shortcut icon" href="./images/circle.png" type="iamge/x-icon">
+    <link rel="icon" href="./images/circle.png" type="image/x-icon">
+    <href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
 
-    <!--swiper-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- 디자인파일 -->
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/animation.css">
-    <link rel="stylesheet" href="./style/resposive.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
 
     <!-- 스크립트 -->
     <script src="./script/index.js" defer></script>
-    <script src="./script/scroll.js" defer></script>
-    <title>김지영 | 2025 Porfolio</title>
+    <title>오뚜기몰 | 오뚜기몰에는 다 있다!</title>
 </head>
+
 <body>
+    <!-- 헤더 -->
     <div class="h_bg">
         <header>
-            <nav>
-                <ul>
-                    <li><a href="./index.html" class="nav_active">HOME</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Design</a></li>
-                </ul>
-            </nav>
-            <div class="h_right">
-                <a href="#">Contact Me</a>
+            <div class="h_top">
+                <h1><a href="./index.html"><img src="./images/logo.png" alt="오뚜기 몰"></a></h1>
+                <div class="top_right">
+                    <a href="#">고객센터</a>
+                </div>
+            </div>
+            <div class="h_btm">
+                <nav>
+                    <ul>
+                        <li><a href="#"><img src="./images/menu.png" alt=""></a>
+                            <div class="submenu">
+                                <div class="submenu_bg">
+                                    <div class="sub_wrap">
+                                        <div class="sub_top">
+                                            <dl>
+                                                <dt>오뚜기테마</dt>
+                                                <dd>
+                                                    <a href="./sublist.html"><span>원쁠원</span></a>
+                                                    <a href="./sublist.html"><span>무료배송</span></a>
+                                                    <a href="./sublist.html"><span>라이트앤조이</span></a>
+                                                    <a href="./sublist.html"><span>기획팩</span></a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>라면</dt>
+                                                <dd>
+                                                    <a href="./sublist.html"><span>봉지라면</span></a>
+                                                    <a href="./sublist.html"><span>컵라면</span></a>
+                                                    <a href="./sublist.html"><span>컵누들</span></a>
+                                                    <a href="./sublist.html"><span>잡채</span></a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>라이스</dt>
+                                                <dd>
+                                                    <a href="./sublist.html#"><span>즉석밥/컵밥</span></a>
+                                                    <a href="./sublist.html"><span>죽/누룽지</span></a>
+                                                    <a href="./sublist.html"><span>냉동볶음밥</span></a>
+                                                    <a href="./sublist.html"><span>잡곡밥/곤약밥</span></a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>면류</dt>
+                                                <dd>
+                                                    <a href="./sublist.html"><span>국수/국수장국</span></a>
+                                                    <a href="./sublist.html"><span>당면</span></a>
+                                                    <a href="./sublist.html"><span>사리면</span></a>
+                                                    <a href="./sublist.html"><span>파스타/스파게티</span></a>
+                                                    <a href="./sublist.html"><span>물/비빔 냉면</span></a>
+                                                    <a href="./sublist.html"><span>쫄면</span></a>
+                                                    <a href="./sublist.html"><span>짜장짬뽕</span></a>
+                                                    <a href="./sublist.html"><span>우동/콩국수</span></a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>간편조리</dt>
+                                                <dd>
+                                                    <a href="./sublist.html"><span>카레/짜장/하이스</span></a>
+                                                    <a href="./sublist.html"><span>오뚜기 3분</span></a>
+                                                    <a href="./sublist.html"><span>덮밥/떡볶이 소스</span></a>
+                                                    <a href="./sublist.html"><span>간편찜</span></a>
+                                                    <a href="./sublist.html"><span>물/비빔 냉면</span></a>
+                                                    <a href="./sublist.html"><span>쫄면</span></a>
+                                                    <a href="./sublist.html"><span>짜장짬뽕</span></a>
+                                                    <a href="./sublist.html"><span>우동/콩국수</span></a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>오뚜기소스</dt>
+                                                <dd>
+                                                    <a href="./sublist.html"><span>케찹/마요네즈/드레싱</span></a>
+                                                    <a href="./sublist.html"><span>식초/미향</span></a>
+                                                    <a href="./sublist.html"><span>간편소스/양념</span></a>
+                                                    <a href="./sublist.html"><span>후추/허브솔트/겨자/와사비</span></a>
+                                                    <a href="./sublist.html"><span>육류 소스/양념</span></a>
+                                                    <a href="./sublist.html"><span>파스타소스</span></a>
+                                                    <a href="./sublist.html"><span>스테이크/돈까스 소스</span></a>
+                                                    <a href="./sublist.html"><span>탕/찌개 양념</span></a>
+                                                    <a href="./sublist.html"><span>요리청</span></a>
+                                                    <a href="./sublist.html"><span>세계소스</span></a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>냉장&냉동</dt>
+                                                <dd>
+                                                    <a href="./sublist.html#"><span>피자</span></a>
+                                                    <a href="./sublist.html"><span>치킨</span></a>
+                                                    <a href="./sublist.html"><span>만두/딤섬/만두피</span></a>
+                                                    <a href="./sublist.html"><span>또띠아</span></a>
+                                                    <a href="./sublist.html"><span>피클</span></a>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="sub_btm">
+                                            <dl>
+                                                <dt>가루/향신료</dt>
+                                                <dd>
+                                                    <a href="./sublist.html"><span>카레/짜장</span></a>
+                                                    <a href="./sublist.html"><span>간편믹스</span></a>
+                                                    <a href="./sublist.html"><span>튀김/부침/빵가루</span></a>
+                                                    <a href="./sublist.html"><span>분말죽</span></a>
+                                                    <a href="./sublist.html"><span>하이스</span></a>
+                                                    <a href="./sublist.html"><span>요리용가루</span></a>
+                                                    <a href="./sublist.html"><span>향신료</span></a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>통조림/오일</dt>
+                                                <dd>
+                                                    <a href="./sublist.html"><span>참치</span></a>
+                                                    <a href="./sublist.html"><span>스위트콘/과일통조림</span></a>
+                                                    <a href="./sublist.html"><span>햄</span></a>
+                                                    <a href="./sublist.html"><span>꽁치/고등어</span></a>
+                                                    <a href="./sublist.html"><span>참기름/들기름/고추맛기름/볶음참깨</span></a>
+                                                    <a href="./sublist.html"><span>콩기름/옥수수유</span></a>
+                                                    <a href="./sublist.html"><span>올리브유</span></a>
+                                                    <a href="./sublist.html"><span>카놀라유</span></a>
+                                                    <a href="./sublist.html"><span>포도씨유</span></a>
+                                                    <a href="./sublist.html"><span>해바라기유</span></a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>잼/시럽/다류/유제품</dt>
+                                                <dd>
+                                                    <a href="./sublist.html"><span>잼/시럽</span></a>
+                                                    <a href="./sublist.html"><span>마말레이드</span></a>
+                                                    <a href="./sublist.html"><span>분말차</span></a>
+                                                    <a href="./sublist.html"><span>액상차</span></a>
+                                                    <a href="./sublist.html"><span>침출차</span></a>
+                                                    <a href="./sublist.html"><span>마가린</span></a>
+                                                    <a href="./sublist.html"><span>치즈</span></a>
+                                                    <a href="./sublist.html"><span>버터</span></a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>김/미역</dt>
+                                                <dd>
+                                                    <a href="./sublist.html"><span>미역</span></a>
+                                                    <a href="./sublist.html"><span>다시마</span></a>
+                                                    <a href="./sublist.html"><span>김</span></a>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="sub_bg">
+                                        <p><img src="./images/sub_bg.jpg" alt=""></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="./sublist.html">NEW</a></li>
+                        <li><a href="./sublist.html">BEST</a></li>
+                        <li><a href="./sublist.html">이벤트</a></li>
+                        <li><a href="./sublist.html">브랜드관</a></li>
+                        <li><a href="./sublist.html">오뚜기컬렉션</a></li>
+                    </ul>
+                </nav>
+                <div class="btm_right">
+                    <a href="#"><img src="./images/search.png" alt="검색하기"></a>
+                    <a href="#"><img src="./images/cart.png" alt="장바구니"></a>
+                    <a href="#"><img src="./images/favorite.png" alt="관심상품"></a>
+                    <a href="./login.html"><img src="./images/page.png" alt="마이페이지"></a>
+                </div>
             </div>
         </header>
     </div>
-    <div class="scroll_bg">
-        <div class="scroll"></div>
-    </div>
-    <div class="swiper" id="main">
-        <div class="swiper-wrapper">
-            <!-- 인트로 페이지 -->
-            <div class="swiper-slide intro">
-                <h1><img src="./image/title.png" alt="2025 Web Designer Porfolio By.KimJiYoung"></h1>
-                <p class="bg_ani"></p>
-            </div>
-
-            <!-- 프로필 페이지 -->
-            <div class="swiper-slide profile">
-                <div class="left">
-                    <p class="idimg"><img src="./image/idimg.jpg" alt=""></p>
-                    <div class="adout">
-                        <h3>About Me</h3>
-                        <ul class="about_txt">
-                            <li>김지영 / KIM JI YOUNG</li>
-                            <li>1992 . 09 . 17</li>
-                            <li>유한대학교 식품영양학과</li>
-                            <li>alsn8539@gmail.com</li>
-                            <li>010-4121-8539</li>
-                            <li><a href="https://github.com/Kim-Jiyoung-mari">https://github.com/Kim-Jiyoung-mari</a></li>
-                        </ul>
+    
+    <!-- 메인 -->
+    <main>
+        <!-- 메인 배너 -->
+        <div class="swiper main_bnr">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                    <div class="bnr_txt js_bnr">
+                        <h1><em>ALL NEW</em> 진라면</h1>
+                        <p>10% 이상 늘어난 건더기, 감칠맛을 높인 국물까지!<br>더 깊고 진한 맛으로 만나요</p>
+                        <a href="./item.html" class="link">NEW 진라면 보러가기</a>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="right_top">
-                        <h2>“일단 한번 해보겠습니다”</h2>
-                        <p><span>소통하고 공감하는 웹디자이너, 끊임없이 도전하는 퍼블리셔</span><br>김지영 입니다.</p>
+                <div class="swiper-slide slide2">
+                    <div class="bnr_txt">
+                        <h1><em>가뿐한</em> 식단관리</h1>
+                        <p>설레는 봄, 가벼운 옷차림만큼 가뿐하게!</p>
+                        <a href="./item.html" class="link">가뿐한끼 바로보기</a>
                     </div>
-                    <div class="right_btm">
-                        <div class="btm_left">
-                            <div class="experience">
-                                <h3>Experience</h3>
-                                <ul class="experience_txt">
-                                    <li><em>2024.10~2025.03</em>UI/UX 디자이너를 위한 반응형 웹디자인&웹퍼블리셔 양성과정</li>
-                                    <li><em>2022.01~2023.11</em>(주) 더위드 - 디자이너 및 쇼핑몰 MD </li>
-                                    <li><em>2017.09~2020.05</em>솜누스 - 매장관리 운영 및 SNS 마케팅</li>
-                                    <li><em>2015.03~2016.06</em>데이텍 - 음원 사이트(멜론) 음악 컨텐츠 관리 및 검수</li>
-                                    <li><em>2013.04~2014.04</em>유한대학교 산학협력단 - SNS 및 블로그 홍보 관리</li>
-                                </ul>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="swiper-scrollbar active"></div>
+            </div>
+        </div>
+
+        <!-- 오뚜기 신상 업데이트 -->
+        <div class="main_contents new_wrap">
+            <h2>오뚜기 신상 업데이트</h2>
+            <div class="swiper new">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide new_i">
+                        <a href="./item.html"><img src="./images/new_005.jpg" alt="죽장연 빠개장 된장찌개양념 120g"></a>
+                        <div class="item_text">
+                            <h3>죽장연 빠개장 된장찌개양념 120g</h3>
+                            <p class="i_txt">이달의 신제품 15% 할인</p>
+                            <p class="price">2,380</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide new_i">
+                        <a href="./item.html"><img src="./images/new_001.jpg" alt="마라볶음밥 용기 230g"></a>
+                        <div class="item_text">
+                            <h3>마라볶음밥 용기 230g</h3>
+                            <p class="i_txt">얼얼한 마라의 매력을 담은 볶음밥</p>
+                            <p class="price">4,780원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide new_i">
+                        <a href="./item.html"><img src="./images/new_002.jpg" alt="페퍼팝 오리지널 20g"></a>
+                        <div class="item_text">
+                            <h3>페퍼팝 오리지널 20g</h3>
+                            <p class="i_txt">순후추에 더해진 풍성한 감칠맛</p>
+                            <p class="price">2,480원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide new_i">
+                        <a href="./item.html"><img src="./images/new_003.jpg" alt="가뿐한끼 100% 현미로 지은 부드러운 현미밥"></a>
+                        <div class="item_text">
+                            <h3>가뿐한끼 100% 현미로 지은 부드러운 현미밥</h3>
+                            <p class="i_txt">백미없이 부드러운 100% 현미밥</p>
+                            <p class="price">1,180원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide new_i">
+                        <a href="./item.html"><img src="./images/new_004.jpg" alt="가뿐한끼 100% 촉촉스팀 닭가슴살 레드페퍼 100g"></a>
+                        <div class="item_text">
+                            <h3>가뿐한끼 100% 촉촉스팀 닭가슴살 레드페퍼 100g</h3>
+                            <p class="i_txt">고단백으로 든든하게, 한입크기로 가뿐하게</p>
+                            <p class="price">2,680원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <a href="./sublist.html" class="viewmore">오뚜기 신상 더보기</a>
+        </div>
+
+        <!-- 이벤트 배너1 -->
+        <div class="main_contents bnr1">
+            <div class="bnr_contents">
+                <h4>맛있는건 한 개 더! 오뚜기 원쁠원모음</h4>
+                <p class="bnr_txt">원쁠원으로 만나요💛</p>
+            </div>
+        </div>
+
+        <!-- 오뚜기 베스트 PICK -->
+        <div class="main_contents best_wrap">
+            <div class="title">
+                <h2>오뚜기 베스트 PICK</h2>
+                <div class="item_tab">
+                    <a href="#" class="active">전체보기</a>
+                    <a href="#">라면</a>
+                    <a href="#">오뚜기밥</a>
+                    <a href="#">오뚜기스낵</a>
+                    <a href="#">오뚜기3분</a>
+                    <a href="#">간편식</a>
+                </div>
+            </div>
+            <div class="best_tab">
+                <div class="best_contents alll">
+                    <div class="swiper best1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/pick_001.jpg" alt="맛있는 오뚜기밥 3입"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓] 맛있는 오뚜기밥 3입</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개 / 3개 골라담기</p>
+                                    <p class="price">9,900원</p>
+                                </div>
                             </div>
-                            <div class="license">
-                                <h3>License</h3>
-                                <ul class="license_txt">
-                                    <li>운전면허 2종 보통</li>
-                                    <li>컴퓨터 활용능력 1급</li>
-                                </ul>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/pick_002.jpg" alt="피자 3판 골라담기"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓] 피자 3판 골라담기</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개</p>
+                                    <p class="price">19,900원</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="btm_skills">
-                            <h3>Skills</h3>
-                            <ul class="skill_txt">
-                                <li>
-                                    <div class="loading loading1">
-                                        <svg viewBox="0 0 124 124">
-                                            <!-- 배경 원 -->
-                                            <circle class="circle-loading" cx="62" cy="62" r="59" fill="none" />
-                                            <!-- 애니메이션 원 -->
-                                            <circle class="circle" cx="62" cy="62" r="59" fill="none" stroke-linecap="round" />
-                                        </svg>
-                                    </div>
-                                    PhotoShop
-                                </li>
-                                <li>
-                                    <div class="loading loading2">
-                                        <svg viewBox="0 0 124 124">
-                                            <!-- 배경 원 -->
-                                            <circle class="circle-loading" cx="62" cy="62" r="59" fill="none" />
-                                            <!-- 애니메이션 원 -->
-                                            <circle class="circle" cx="62" cy="62" r="59" fill="none" stroke-linecap="round" />
-                                        </svg>
-                                    </div>
-                                    illustratior
-                                </li>
-                                <li>
-                                    <div class="loading loading3">
-                                        <svg viewBox="0 0 124 124">
-                                            <!-- 배경 원 -->
-                                            <circle class="circle-loading" cx="62" cy="62" r="59" fill="none" />
-                                            <!-- 애니메이션 원 -->
-                                            <circle class="circle" cx="62" cy="62" r="59" fill="none" stroke-linecap="round" />
-                                        </svg>
-                                    </div>
-                                    Premiere
-                                </li>
-                                <li>
-                                    <div class="loading loading4">
-                                        <svg viewBox="0 0 124 124">
-                                            <!-- 배경 원 -->
-                                            <circle class="circle-loading" cx="62" cy="62" r="59" fill="none" />
-                                            <!-- 애니메이션 원 -->
-                                            <circle class="circle" cx="62" cy="62" r="59" fill="none" stroke-linecap="round" />
-                                        </svg>
-                                    </div>
-                                    Figma
-                                </li>
-                                <li>
-                                    <div class="loading loading5">
-                                        <svg viewBox="0 0 124 124">
-                                            <!-- 배경 원 -->
-                                            <circle class="circle-loading" cx="62" cy="62" r="59" fill="none" />
-                                            <!-- 애니메이션 원 -->
-                                            <circle class="circle" cx="62" cy="62" r="59" fill="none" stroke-linecap="round" />
-                                        </svg>
-                                    </div>
-                                    HTML5
-                                </li>
-                                <li>
-                                    <div class="loading loading6">
-                                        <svg viewBox="0 0 124 124">
-                                            <!-- 배경 원 -->
-                                            <circle class="circle-loading" cx="62" cy="62" r="59" fill="none" />
-                                            <!-- 애니메이션 원 -->
-                                            <circle class="circle" cx="62" cy="62" r="59" fill="none" stroke-linecap="round" />
-                                        </svg>
-                                    </div>
-                                    CSS3
-                                </li>
-                                <li>
-                                    <div class="loading loading7">
-                                        <svg viewBox="0 0 124 124">
-                                            <!-- 배경 원 -->
-                                            <circle class="circle-loading" cx="62" cy="62" r="59" fill="none" />
-                                            <!-- 애니메이션 원 -->
-                                            <circle class="circle" cx="62" cy="62" r="59" fill="none" stroke-linecap="round" />
-                                        </svg>
-                                    </div>
-                                    Javascript
-                                </li>
-                                <li>
-                                    <div class="loading loading8">
-                                        <svg viewBox="0 0 124 124">
-                                            <!-- 배경 원 -->
-                                            <circle class="circle-loading" cx="62" cy="62" r="59" fill="none" />
-                                            <!-- 애니메이션 원 -->
-                                            <circle class="circle" cx="62" cy="62" r="59" fill="none" stroke-linecap="round" />
-                                        </svg>
-                                    </div>
-                                    gitHub
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 안다르 리디자인 -->
-            <div class="swiper-slide andar" id="redesign">
-                <div class="project_info"><!-- 배경 -->
-                    <div class="pj_contents">
-                        <div class="pj_title">
-                            <h2>안다르</h2>
-                            <p class="pj_txt">브랜드의 차별점을 보여주기 위해 우수한 품질과 전문성을 강조하여, 프리미엄 가치에 대한 신뢰를 구축합니다.</p>
-                        </div>
-                        <div class="pj_detail">
-                            <ul class="pj_con">
-                                <li>25년 01월 24일~ (전체 124시간 / 약 5일 소요)</li>
-                                <li>디자인 개인 100%, 코딩 개인 100%</li>
-                                <li>Figma, PhotoShop, HTML, CSS, Javascript</li>
-                                <li>PAGE | 메인 - 서브 - 상품 상세 페이지 - 로그인창</li>
-                            </ul>
-                            <ul class="reponsive">
-                                <li>PC</li>
-                                <li>Tablet</li>
-                                <li>Mobile</li>
-                            </ul>
-                        </div>
-                        <div class="pj_btn">
-                            <a href="https://kim-jiyoung-mari.github.io/andar/" target="_blank" class="proto" >프로토타입</a>
-                            <a href="https://www.figma.com/proto/lmQuG2rvHiffTDd9hVtfLu/%EA%B9%80%EC%A7%80%EC%98%81_%EC%95%88%EB%8B%A4%EB%A5%B4?node-id=480-3&p=f&t=LUhUi3OeLgtjBr1T-1&scaling=min-zoom&content-scaling=fixed&page-id=478%3A2" target="_blank" class="proto" >UI/UX 기획서</a>
-                            <a href="https://andar.co.kr/index.html" target="_blank" class="before">원본사이트(Before)</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project_img">
-                    <p><img src="./image/andar_mockup.png" alt=""></p>
-                </div>
-            </div>
-
-            <!-- 플리토 리디자인 -->
-            <div class="swiper-slide flito" id="redesign">
-                <div class="project_info"><!-- 배경 -->
-                    <div class="pj_contents">
-                        <div class="pj_title">
-                            <h2>플리토 데이터랩</h2>
-                            <p class="pj_txt">AI 인공지능 기술을 접목한 데이터 플랫폼의 전문성을 강조하며, 독보적인 기술력을 선보입니다. 산업과 언어의 경계를 넘어 다양한 기술과 연계된 혁신적인 AI 기반 서비스를 제공합니다.</p>
-                        </div>
-                        <div class="pj_detail">
-                            <ul class="pj_con">
-                                <li>25년 02월 18일 ~ (전체 25시간 / 약 1일 소요)</li>
-                                <li>디자인 개인 100%, 코딩 개인 100%</li>
-                                <li>Figma, PhotoShop, HTML, CSS, Javascript</li>
-                                <li>PAGE | 메인</li>
-                            </ul>
-                            <ul class="reponsive">
-                                <li>PC</li>
-                            </ul>
-                        </div>
-                        <div class="pj_btn">
-                            <a href="https://kim-jiyoung-mari.github.io/FlitoDataLab/" target="_blank" class="proto">프로토타입</a>
-                            <a href="https://www.figma.com/proto/HowvSO253EJU1AuqN3LSqv/%EA%B8%B0%EC%97%85%ED%98%95-%ED%94%8C%EB%A6%AC%ED%86%A0%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%9E%A9?node-id=152-11&p=f&t=AsKjQPsgaxuSRZ68-1&scaling=min-zoom&content-scaling=fixed&page-id=152%3A2" target="_blank" class="proto" >UI/UX 기획서</a>
-                            <a href="https://datalab.flitto.com/ko" target="_blank" class="before">원본사이트(Before)</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project_img">
-                    <p><img src="./image/flito_mockup.png" alt=""></p>
-                </div>
-            </div>
-
-            <!-- 마데카 프라임 -->
-            <div class="swiper-slide prime" id="redesign">
-                <div class="project_info"><!-- 배경 -->
-                    <div class="pj_contents">
-                        <div class="pj_title">
-                            <h2>마데카프라임</h2>
-                            <p class="pj_txt">첨단 기술이 접목된 뷰티 디바이스의 프리미엄 가치를 강조하며, 세련되고 고급스러운 무드를 극대화합니다. 직관적인 UI로 브랜드의 차별성을 강화합니다.</p>
-                        </div>
-                        <div class="pj_detail">
-                            <ul class="pj_con">
-                                <li>25년 02월 05일~ (전체 49시간 / 약 2일 소요)</li>
-                                <li>디자인 개인 100%, 코딩 개인 100%</li>
-                                <li>Figma, PhotoShop, HTML, CSS, Javascript</li>
-                                <li>PAGE | 메인 - 서브 - 상품 상세 페이지</li>
-                            </ul>
-                            <ul class="reponsive">
-                                <li>PC</li>
-                                <li>Tablet</li>
-                                <li>Mobile</li>
-                            </ul>
-                        </div>
-                        <div class="pj_btn">
-                            <a href="https://kim-jiyoung-mari.github.io/madecaprime/" target="_blank" class="proto">프로토타입</a>
-                            <a href="https://www.figma.com/proto/RJmH2Z0Rcwz9BU3mnC4Vgi/%EA%B9%80%EC%A7%80%EC%98%81_%EB%A7%88%EB%8D%B0%EC%B9%B4%ED%94%84%EB%9D%BC%EC%9E%84?node-id=130-33&p=f&t=Lcryo3QaVP6HR3Af-1&scaling=min-zoom&content-scaling=fixed&page-id=130%3A25" target="_blank" class="proto">UI/UX 기획서</a>
-                            <a href="https://madecaprime.co.kr/?srsltid=AfmBOopJ07HhNWi_pv_Oj6NhyMdZLcXfJ2fzaGJT27gmqMVsPbJHuWn6" target="_blank" class="before">원본사이트(Before)</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project_img">
-                    <p><img src="./image/prime_mockup.png" alt=""></p>
-                </div>
-            </div>
-
-            <!-- 오뚜기몰 -->
-            <div class="swiper-slide otuki" id="redesign">
-                <div class="project_info">
-                    <div class="pj_contents">
-                        <div class="pj_title">
-                            <h2>오뚜기몰</h2>
-                            <p class="pj_txt">선명한 색감을 활용해 고객의 식욕을 극대화 하는 비주얼 경험을 제공합니다.<br>브랜드의 개성을 강조하는 강렬한 디자인으로 매력적인 홈페이지를 구현합니다.</p>
-                        </div>
-                        <div class="pj_detail">
-                            <ul class="pj_con">
-                                <li>25년 02월 10일~ (전체시간 40시간 / 약 1.3일 소요)</li>
-                                <li>디자인 개인 100%, 코딩 개인 100%</li>
-                                <li>Figma, PhotoShop, HTML, CSS, Javascript</li>
-                                <li>PAGE | 메인 - 서브 - 상품 상세 페이지 - 로그인창</li>
-                            </ul>
-                            <ul class="reponsive">
-                                <li>PC</li>
-                            </ul>
-                        </div>
-                        <div class="pj_btn">
-                            <a href="https://kim-jiyoung-mari.github.io/ottogi/index.html" target="_blank" class="proto">프로토타입</a>
-                            <a href="https://www.figma.com/proto/WNq5eiVu9BtxNkR051Po53/%EC%98%A4%EB%9A%9C%EA%B8%B0%EB%AA%B0?node-id=103-9&p=f&t=Ock3II909Wf5ls38-1&scaling=min-zoom&content-scaling=fixed&page-id=102%3A2" target="_blank" class="proto">UI/UX 기획서</a>
-                            <a href="https://www.otokimall.com/front/main?channelPluginKey=9c5ebb94-a2bc-45f0-af98-ccb9db59cedf" target="_blank" class="before">원본사이트(Before)</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project_img">
-                    <p><img src="./image/otuki_mockup.png " alt=""></p>
-                </div>
-            </div>
-
-            <!-- 디자인 프로젝트 -->
-            <div class="swiper-slide design"><!-- 전체 스와이퍼 슬라이드 : 보여지는 영역-->
-                <div class="contents">
-                    <div class="left">
-                        <div class="swiper banner">
-                            <div class="swiper-wrapper" title="클릭하시면 확대됩니다😊">
-                                <div class="swiper-slide b"><img src="./design/banner1.jpg" alt=""></div>
-                                <div class="swiper-slide b"><img src="./design/banner2.jpg" alt=""></div>
-                                <div class="swiper-slide b"><img src="./design/banner3.jpg" alt=""></div>
-                                <div class="swiper-slide b"><img src="./design/banner4.jpg" alt=""></div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/pick_003.jpg" alt="컵밥 7개 골라담기"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓] 컵밥 7개 골라담기</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개</p>
+                                    <p class="price">19,900원</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper sns" title="클릭하시면 확대됩니다😊">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide s"><img src="./design/sns1.jpg" alt=""></div>
-                                <div class="swiper-slide s"><img src="./design/sns2.jpg" alt=""></div>
-                                <div class="swiper-slide s"><img src="./design/sns3.jpg" alt=""></div>
-                                <div class="swiper-slide s"><img src="./design/sns4.jpg" alt=""></div>
-                                <div class="swiper-slide s"><img src="./design/sns5.jpg" alt=""></div>
-                                <div class="swiper-slide s"><img src="./design/sns6.jpg" alt=""></div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html#"><img src="./images/pick_004.jpg" alt="진라면 매운맛 컵 65g"></a>
+                                <div class="item_text">
+                                    <h3>진라면 매운맛 컵 65g</h3>
+                                    <p class="i_txt">진라면 매운맛 컵 65g</p>
+                                    <p class="price">850원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/pick_001.jpg" alt="맛있는 오뚜기밥 3입"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓] 맛있는 오뚜기밥 3입</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개 / 3개 골라담기</p>
+                                    <p class="price">9,900원</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="right">
-                        <div class="swiper detail" title="클릭하시면 확대됩니다😊">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide de"><img src="./design/detail1.jpg" alt=""></div>
-                                <div class="swiper-slide de"><img src="./design/detail2.jpg" alt=""></div>
-                                <div class="swiper-slide de"><img src="./design/detail3.jpg" alt=""></div>
-                                <div class="swiper-slide de"><img src="./design/detail4.jpg" alt=""></div>
+                    <div class="progress">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <a href="./sublist.html" class="viewmore">오뚜기 베스트 더보기</a>
+                </div>
+                <div class="best_contents noodle">
+                    <div class="swiper best2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/noodle_001.jpg" alt="진라면 매운맛(120gX5)"></a>
+                                <div class="item_text">
+                                    <h3>진라면 매운맛(120gX5)</h3>
+                                    <p class="i_txt">씰 스티커 동봉</p>
+                                    <p class="price">3,580원</p>
+                                </div>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/noodle_002.jpg" alt="진라면 순한맛(120gX5)"></a>
+                                <div class="item_text">
+                                    <h3>진라면 순한맛(120gX5)</h3>
+                                    <p class="i_txt">씰 스티커 동봉</p>
+                                    <p class="price">3,580원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/noodle_003.jpg" alt="콕콕콕 컵라면 5종 골라담기"></a>
+                                <div class="item_text">
+                                    <h3>콕콕콕 컵라면 5종 골라담기</h3>
+                                    <p class="i_txt">원하는대로 골라보세요!</p>
+                                    <p class="price">1,180원<del>1,480원</del><span class="sale">20%</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/noodle_004.jpg" alt="[99마켓]컵누들 6입 3개 골라담기"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓]컵누들 6입 3개 골라담기</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개</p>
+                                    <p class="price">19,900원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/noodle_005.jpg" alt="맛있는 오뚜기밥 3입"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓] 라면 멀티팩 5개 골라담기</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개</p>
+                                    <p class="price">19,900원</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- 디자인 프로젝트 컨텐츠 끝 -->
-                <div class="popup_bg">
-                    <div class="scroll_wrap">
-                        <img src="./design/detail.png" alt="">
+                    <div class="progress">
+                        <div class="swiper-scrollbar"></div>
                     </div>
+                    <a href="./sublist.html" class="viewmore">오뚜기 베스트 더보기</a>
                 </div>
-            </div>
-
-            <!-- 아웃트로 페이지 -->
-            <div class="swiper-slide outro">
-                <h3>THANK YOU FOR WATCHING!</h3>
-                <p class="selfca"><img src="./image/selca.png" alt=""></p>
-                <div class="info">
-                    <div class="qrcode">
-                        <img src="./image/kakao_qr.png" alt="">
+                <div class="best_contents rice">
+                    <div class="swiper best3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/pick_001.jpg" alt="맛있는 오뚜기밥 3입"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓] 맛있는 오뚜기밥 3입</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개 / 3개 골라담기</p>
+                                    <p class="price">9,900원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/rice_002.jpg" alt="가뿐한끼 현미밥 150g"></a>
+                                <div class="item_text">
+                                    <h3>가뿐한끼 현미밥 150g</h3>
+                                    <p class="i_txt">가뿐하게 도전해밥!</p>
+                                    <p class="price">1,180원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/new_003.jpg" alt="가뿐한끼 100% 현미로 지은 부드러운 현미밥 130g"></a>
+                                <div class="item_text">
+                                    <h3>가뿐한끼 100% 현미로 지은 부드러운 현미밥 130g</h3>
+                                    <p class="i_txt">백미없이 부드러운 100% 현미밥</p>
+                                    <p class="price">1,180원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/rice_003.jpg" alt="오뚜기밥 수향미 현미밥 210g"></a>
+                                <div class="item_text">
+                                    <h3>오뚜기밥 수향미 현미밥 210g</h3>
+                                    <p class="i_txt">구수한 향이 가득한 현미밥</p>
+                                    <p class="price">1,480원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/rice_004.jpg" alt="맛있는 오뚜기밥 3입"></a>
+                                <div class="item_text">
+                                    <h3>오뚜기밥 200g 24개</h3>
+                                    <p class="i_txt">무료배송</p>
+                                    <p class="price">20,500원<del>33,120원</del><span class="sale">38%</span></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="about_txt">
-                        <li>김지영 / KIM JI YOUNG</li>
-                        <li>alsn8539@gmail.com</li>
-                        <li>010-4121-8539</li>
-                    </ul>
+                    <div class="progress">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <a href="./sublist.html" class="viewmore">오뚜기 베스트 더보기</a>
+                </div>
+                <div class="best_contents cracker">
+                    <div class="swiper best4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/cracker_001.jpg" alt="뿌셔뿌셔 마요땅 100g"></a>
+                                <div class="item_text">
+                                    <h3>뿌셔뿌셔 마요땅 100g</h3>
+                                    <p class="i_txt">심심할 때 출출할 때 뿌셔뿌셔</p>
+                                    <p class="price">880원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/cracker_002.jpg" alt="뿌셔뿌셔 버터구이오징어맛 90g"></a>
+                                <div class="item_text">
+                                    <h3>뿌셔뿌셔 버터구이오징어맛 90g</h3>
+                                    <p class="i_txt">꼬소하게 뿌셔!</p>
+                                    <p class="price">880원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/cracker_003.jpg" alt="스위트콘나쵸 60g"></a>
+                                <div class="item_text">
+                                    <h3>스위트콘나쵸 60g</h3>
+                                    <p class="i_txt">달콤한 스위트콘 시즈닝, 바삭함이 살아있는 나쵸</p>
+                                    <p class="price">1,780원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/cracker_004.jpg" alt="열 뿌셔뿌셔 화끈한 매운맛 90g"></a>
+                                <div class="item_text">
+                                    <h3>열 뿌셔뿌셔 화끈한 매운맛 90g</h3>
+                                    <p class="i_txt">뿌셔뿌셔 새로운 맛!</p>
+                                    <p class="price">880원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/cracker_005.jpg" alt="스위트앤젤 밀감 90g"></a>
+                                <div class="item_text">
+                                    <h3>스위트앤젤 밀감 90g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">780원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <a href="./sublist.html" class="viewmore">오뚜기 베스트 더보기</a>
+                </div>
+                <div class="best_contents three">
+                    <div class="swiper best5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/three_001.jpg" alt="3분카레 약간매운맛 200g"></a>
+                                <div class="item_text">
+                                    <h3>3분카레 약간매운맛 200g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">1,980원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/three_002.jpg" alt="3분카레 매운맛 200g"></a>
+                                <div class="item_text">
+                                    <h3>3분카레 매운맛 200g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">1,980원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/three_003.jpg" alt="3분카레 약간매운맛 200g"></a>
+                                <div class="item_text">
+                                    <h3>3분 햄버그스테이크 140g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">2,780원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/three_004.jpg" alt="3분 미트볼 150g"></a>
+                                <div class="item_text">
+                                    <h3>3분 미트볼 150g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">2,780원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/three_005.jpg" alt="3분 쇠고기짜장 200g"></a>
+                                <div class="item_text">
+                                    <h3>3분 쇠고기짜장 200g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">1,980원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <a href="./sublist.html" class="viewmore">오뚜기 베스트 더보기</a>
+                </div>
+                <div class="best_contents easy">
+                    <div class="swiper best6">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/pick_002.jpg" alt="피자 3판 골라담기"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓] 피자 3판 골라담기</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개</p>
+                                    <p class="price">19,900원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/pick_003.jpg" alt="컵밥 7개 골라담기"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓] 컵밥 7개 골라담기</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개</p>
+                                    <p class="price">19,900원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/easy_001.jpg" alt="지역식 탕국찌개 5개 골라담기"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓] 지역식 탕국찌개 5개 골라담기</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개</p>
+                                    <p class="price">19,900원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/easy_002.jpg" alt="오즈키친 간편식 5개 골라담기"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓] 오즈키친 간편식 5개 골라담기</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개</p>
+                                    <p class="price">9,900원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide best_i">
+                                <a href="./item.html"><img src="./images/easy_003.jpg" alt="오즈키친 치킨 3개 골라담기"></a>
+                                <div class="item_text">
+                                    <h3>[99마켓] 오즈키친 치킨 3개 골라담기</h3>
+                                    <p class="i_txt">뚜밀리데이엔 +1개</p>
+                                    <p class="price">19,900원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <a href="./sublist.html" class="viewmore">오뚜기 베스트 더보기</a>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- 오뚜기 베스트 상품 리뷰 -->
+        <div class="main_contents review_wrap">
+            <div class="title">
+                <h2>오뚜기 베스트 상품 리뷰</h2>
+                <p>좋은건 모두 알아야 하니까!</p>
+            </div>
+            <div class="swiper review">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide review_i">
+                        <a href="./item.html"><img src="./images/review_001.jpg" alt=""></a>
+                        <div class="review_txt">
+                            <div class="stars">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                            </div>
+                            <p class="i_txt">고시히까리밥은 확실히 일반백미보다 찰진 느낌이 있어서 더 맛있게 느껴져요</p>
+                            <div class="review_item">
+                                <p class="i_name">(뚜밀리데이엔+1개) [99마켓]맛있는 오뚜기밥 3입 3개 골라담기</p>
+                                <p class="i_num">⭐5.0 (1,668건)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide review_i">
+                        <a href="./item.html"><img src="./images/review_002.jpg" alt=""></a>
+                        <div class="review_txt">
+                            <div class="stars">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                            </div>
+                            <p class="i_txt">에어 프라이어에 조리해서 먹었는데 도우가 특히 바삭바삭하고 전체적으로 자극적이지 않고 맛있어요</p>
+                            <div class="review_item">
+                                <p class="i_name">(뚜밀리데이엔+1개) [99마켓]피자 3판 골라담기</p>
+                                <p class="i_num">⭐5.0 (555건)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide review_i">
+                        <a href="./item.html"><img src="./images/review_003.jpg" alt=""></a>
+                        <div class="review_txt">
+                            <div class="stars">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                            </div>
+                            <p class="i_txt">비빔밥 컵밥 맛있습니다 고추장의 매운맛과 나물이 어우러져 풍미를 살림</p>
+                            <div class="review_item">
+                                <p class="i_name">(뚜밀리데이엔+1개) [99마켓]컵밥 7개 골라담기</p>
+                                <p class="i_num">⭐4.9 (1,628건)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide review_i">
+                        <a href="./item.html"><img src="./images/review_004.jpg" alt=""></a>
+                        <div class="review_txt">
+                            <div class="stars">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                            </div>
+                            <p class="i_txt">여러 종류의 라면을 저렴한 가격에 구매할 수 있어서 가성비가 좋았습니다. 뚜밀리데이 좋네요!</p>
+                            <div class="review_item">
+                                <p class="i_name">(뚜밀리데이엔+1개) [99마켓]라면 멀티팩 5개 골라담기</p>
+                                <p class="i_num">⭐ 5.0 (599건)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide review_i">
+                        <a href="./item.html"><img src="./images/review_001.jpg" alt=""></a>
+                        <div class="review_txt">
+                            <div class="stars">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                                <img src="./images/star.png" alt="">
+                            </div>
+                            <p class="i_txt">고시히까리밥은 확실히 일반백미보다 찰진 느낌이 있어서 더 맛있게 느껴져요</p>
+                            <div class="review_item">
+                                <p class="i_name">(뚜밀리데이엔+1개) [99마켓]맛있는 오뚜기밥 3입 3개 골라담기</p>
+                                <p class="i_num">⭐5.0 (1,668건)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+        <!-- 유튜브 배너2 -->
+        <div class="main_contents youtude">
+            <div class="youtube_bnr">
+                <div class="bnr_content">
+                    <p class="bnr_txt">매일 맛있는 여기, 오뚜기 맛집</p>
+                    <h4>오뚜기 Daily</h4>
+                </div>
+            </div>
+            <div class="youtube_channel">
+                <a href="#"><img src="./images/circle.png" alt="오뚜기 프로필"></a>
+                <div class="account">
+                    <h4>오뚜기 Daily</h4>
+                    <p class="ottogi">@ottogi_daily</p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <iframe width="490" height="255" src="https://www.youtube.com/embed/mC5jxchu6Qs" title="[오뚜기 진라면] 더 맛있게 매워진 진매! 진라면에 진~하게 끌린다! (30초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="video_title">[오뚜기 진라면] 라면 먹으러 가자~🍜 더 맛있게 매워진 진매! 진라면에 진~하게 끌린다!
+                    </p>
+                </li>
+                <li>
+                    <iframe width="490" height="255" src="https://www.youtube.com/embed/e1Rmr7KwXak" title="[오뚜기 진비빔면] 이제 비빔면도 손~크게! 양도 맛도 120% 만족 오뚜기 진비빔면 (15초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="video_title">[오뚜기 진비빔면] 이제 비빔면도 손~크게!😎 양도 맛도 120% 만족 오뚜기 진비빔면 </p>
+                </li>
+                <li>
+                    <iframe width="490" height="255" src="https://www.youtube.com/embed/_pVxvT8uYvs" title="[오뚜기 카레] 나만 아는 맛집, 우리 아빠 카레🍛 카레로 아빠의 마음까지 싹~싹~💛 (30초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="video_title">[오뚜기 카레] 나만 아는 맛집, 우리 아빠 카레🍛 카레로 아빠의 마음까지 싹~싹~💛</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 이벤트 배너2 -->
+        <div class="main_contents bnr2">
+            <div class="bnr_contents">
+                <h4>우리에게 필요한 시간 단 3분</h4>
+                <p class="bnr_txt">잠깐의 기다림도 더 즐거울 수 있도록</p>
+            </div>
+        </div>
+
+        <!-- 오직 오뚜기몰에서만 -->
+        <div class="main_contents only_wrap">
+            <div class="title">
+                <h2>오직 오뚜기몰에서만</h2>
+                <div class="item_tab">
+                    <a href="#" class="active">전체보기</a>
+                    <a href="#">오뚜기단독</a>
+                    <a href="#">오뚜기스낵</a>
+                    <a href="#">간편식</a>
+                    <a href="#">라면</a>
+                </div>
+            </div>
+            <div class="only_tab">
+                <div class="only_contents all">
+                    <div class="swiper only1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/mall_001.jpg" alt="오뚜기 X 상쾌환 선물세트"></a>
+                                <div class="item_text">
+                                    <h3>오뚜기 X 상쾌환 선물세트</h3>
+                                    <p class="i_txt">오뚜기몰 단독</p>
+                                    <p class="price">16,900원<del>29,000원</del><span class="sale">42%</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/mall_002.jpg" alt="순후추크림 파스타소스 370g"></a>
+                                <div class="item_text">
+                                    <h3>순후추크림 파스타소스 370g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">6,980원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/mall_003.jpg" alt="컵누들 짬뽕맛 (38.2g X 6)"></a>
+                                <div class="item_text">
+                                    <h3>컵누들 짬뽕맛 (38.2g X 6)</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">9,480원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/mall_004.jpg" alt="오즈키친 울릉도호박죽 420g"></a>
+                                <div class="item_text">
+                                    <h3>오즈키친 울릉도호박죽 420g</h3>
+                                    <p class="i_txt">한정수량</p>
+                                    <p class="price">5,980원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/mall_005.jpg" alt="오뚜기 팔레트 커트러리"></a>
+                                <div class="item_text">
+                                    <h3>오뚜기 팔레트 커트러리</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">21,800원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <a href="./sublist.html" class="viewmore">오뚜기몰 더보기</a>
+                </div>
+                <div class="only_contents single">
+                    <div class="swiper only2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/single_001.jpg" alt="케찹마요 핀뱃지"></a>
+                                <div class="item_text">
+                                    <h3>케찹마요 핀뱃지</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">9,180</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/single_002.jpg" alt="참기름 핀뱃지"></a>
+                                <div class="item_text">
+                                    <h3>참기름 핀뱃지</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">10,800원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/single_003.jpg" alt="윷놀이(yellows)"></a>
+                                <div class="item_text">
+                                    <h3>윷놀이(yellows)</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">29,980원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/single_004.jpg" alt="장우산 옐로우"></a>
+                                <div class="item_text">
+                                    <h3>옐로우즈 챠비 키링</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">15,800원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/mall_005.jpg" alt="오뚜기 팔레트 커트러리"></a>
+                                <div class="item_text">
+                                    <h3>오뚜기 팔레트 커트러리</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">21,800원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <a href="./sublist.html" class="viewmore">오뚜기몰 더보기</a>
+                </div>
+                <div class="only_contents snack">
+                    <div class="swiper only3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/snack_001.jpg" alt="콘크림스프팝콘 55g"></a>
+                                <div class="item_text">
+                                    <h3>콘크림스프팝콘 55g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">1,980원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/cracker_001.jpg" alt="뿌셔뿌셔 마요땅 100g"></a>
+                                <div class="item_text">
+                                    <h3>뿌셔뿌셔 마요땅 100g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">880원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/snack_002.jpg" alt="오뚜기카레팝콘 55g"></a>
+                                <div class="item_text">
+                                    <h3>오뚜기카레팝콘 55g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">1,880원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/snack_003.jpg" alt="꼬리까지 가득 찬 슈크림붕어빵 480g"></a>
+                                <div class="item_text">
+                                    <h3>꼬리까지 가득 찬 슈크림붕어빵 480g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">9,980원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/snack_004.jpg" alt="꼬리까지 가득 찬 팥붕어빵 480g"></a>
+                                <div class="item_text">
+                                    <h3>꼬리까지 가득 찬 팥붕어빵 480g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">9,980원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <a href="./sublist.html" class="viewmore">오뚜기몰 더보기</a>
+                </div>
+                <div class="only_contents simple">
+                    <div class="swiper only4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/simple_001.jpg" alt="오뚜기 X 상쾌환 선물세트"></a>
+                                <div class="item_text">
+                                    <h3>레트로 3분 200g</h3>
+                                    <p class="i_txt">짜장 12개+카레약간매운맛 12개</p>
+                                    <p class="price">47,520원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/simple_002.jpg" alt="제주담음 제주흑돼지마농짜장 250g"></a>
+                                <div class="item_text">
+                                    <h3>제주담음 제주흑돼지마농짜장 250g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">4,280원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/simple_003.jpg" alt="컵밥 마라탕 302g"></a>
+                                <div class="item_text">
+                                    <h3>컵밥 마라탕 302g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">4,480원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/simple_004.jpg" alt="맛있는 제주 메밀전병 만두(360gX2)"></a>
+                                <div class="item_text">
+                                    <h3>맛있는 제주 메밀전병 만두(360gX2)</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">9,980원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/simple_005.jpg" alt="옛날 사골곰탕면 105g"></a>
+                                <div class="item_text">
+                                    <h3>옛날 사골곰탕면 105g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">1,980원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <a href="./sublist.html" class="viewmore">오뚜기몰 더보기</a>
+                </div>
+                <div class="only_contents ramen">
+                    <div class="swiper only5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/noodle_001.jpg" alt="진라면 매운맛(120gX5)"></a>
+                                <div class="item_text">
+                                    <h3>진라면 매운맛(120gX5)</h3>
+                                    <p class="i_txt">씰 스티커 동봉</p>
+                                    <p class="price">3,580원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/noodle_002.jpg" alt="진라면 순한맛(120gX5)"></a>
+                                <div class="item_text">
+                                    <h3>진라면 순한맛(120gX5)</h3>
+                                    <p class="i_txt">씰 스티커 동봉</p>
+                                    <p class="price">3,580원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/ramen_001.jpg" alt="진비빔면 (156gX4)"></a>
+                                <div class="item_text">
+                                    <h3>진비빔면 (156gX4)</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">3,480원<del>4,280원</del><span class="sale">19%</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/ramen_002.jpg" alt="제주똣똣라면(135gX4)"></a>
+                                <div class="item_text">
+                                    <h3>제주똣똣라면(135gX4)</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">8,880원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide only_i">
+                                <a href="./item.html"><img src="./images/ramen_003.jpg" alt="열광라볶이 용기 125g"></a>
+                                <div class="item_text">
+                                    <h3>열광라볶이 용기 125g</h3>
+                                    <p class="i_txt"></p>
+                                    <p class="price">1,980원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <a href="./sublist.html" class="viewmore">오뚜기몰 더보기</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- 이벤트 배너3 -->
+        <div class="main_contents bnr3">
+            <div class="bnr_contents">
+                <h4>오뚜기몰이 처음이라면?</h4>
+                <p class="bnr_txt">웰컴쿠폰으로 시작하세요!</p>
+            </div>
+        </div>
+
+        <!-- 오뚜기 인스타그램 -->
+        <div class="main_contents insta">
+            <div class="insta_contents">
+                <ul>
+                    <li>
+                        <h2>오뚜기 인스타그램</h2>
+                        <p class="ottogi">@ottogi_daily</p>
+                    </li>
+                    <li><a href="#"><img src="./images/insta_001.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_002.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_003.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_004.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_005.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_006.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/insta_007.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>   
+    
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="ft_bg">
+            <div class="ft_left">
+                <ul>
+                    <li><a href="#">오뚜기몰 존재 이유</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">대량주문문의</a></li>
+                </ul>
+                <ul>
+                    <li>대표이사 황성만</li>
+                    <li>14060 경기 안양시 동안구 흥안대로 405</li>
+                    <li>사업자등록번호 138-81-03238</li>
+                </ul>
+                <ul>
+                    <li>통신판매업신고 제 2003-경기안양-169호</li>
+                    <li>건강기능식품 판매업 신고 제 2007-00002호</li>
+                    <li>개인정보 보호책임 및 청소년보호 책임자 서흥덕</li>
+                </ul>
+                <p>OTOKI CORP. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="ft_right">
+                <div class="cs">
+                    <p class="customer">고객센터</p>
+                    <p class="cs_num">080-569-8607</p>
+                </div>
+                <div class="cs_time">
+                    <p>월~금 09:00~17:00</p>
+                    <p>점심시간 12:30~13:30</p>
+                    <p>(주말/공휴일 휴무)</p>
+                </div>
+                <div class="cs_link">
+                    <a href="#" class="인스타"><img src="./images/insta.png" alt="오뚜기몰 인스타그램"></a>
+                    <a href="#" class="유튜브"><img src="./images/youtube.png" alt="오뚜기몰 유튜브"></a>
+                    <a href="#" class="블로그"><img src="./images/blog.png" alt="오뚜기몰 블로그"></a>
+                    <a href="#" class="카카오톡"><img src="./images/kakao.png" alt="오뚜기몰 카카오톡"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

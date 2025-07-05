@@ -1,0 +1,112 @@
+main {
+    width: 460px; margin: 80px auto;
+}
+main h1 {
+    text-align: center; margin-bottom: 40px;
+}
+main h1 > a {}
+main h1 > a > img {}
+
+/* 로그인 화면 */
+main .login_wrap {
+    padding: 50px 20px;
+    border: 1px solid #AAA; border-radius: 20px;
+}
+
+/* 제목 탭 */
+main .login_wrap .login_title {
+    display: flex; margin-bottom: 40px;
+}
+main .login_wrap .login_title a {
+    width: calc(100% / 2); text-align: center;
+    padding: 15px 20px;
+}
+main .login_wrap .login_title > .active {
+    background-color: #FFD400;
+    border-radius: 40px;
+}
+
+/* 내용 컨테이너 */
+main .login_wrap .login_container {}
+
+/* 회원로그인 */
+main .login_wrap .login_container .member {}
+main .login_wrap .login_container .member form {}
+main .login_wrap .login_container .member form .login_box {
+    margin-bottom: 40px;
+}
+main .login_wrap .login_container .member form .login_box ul {}
+main .login_wrap .login_container .member form .login_box ul li {
+    background-color: #FFF;
+    border: 1px solid #E0E0E0; border-radius: 10px;
+    padding: 15px 20px;
+}
+main .login_wrap .login_container .member form .login_box ul li:first-child{
+    margin-bottom: 10px;
+}
+main .login_wrap .login_container .member form .login_box ul li input {}
+main .login_wrap .login_container .member form .login_box ul li #user_id {}
+main .login_wrap .login_container .member form .login_box ul li #user_pw {}
+main .login_wrap .login_container .member form .login_box ul li input::placeholder {
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+main .login_wrap .login_container .member form .login_btn {
+    background-color: #FFD400; text-align: center;
+    padding: 15px 0; border-radius: 10px;
+}
+main .login_wrap .login_container .member form .login_btn button {
+    font-size: 0.94rem; letter-spacing: -0.02rem; 
+}
+main .login_wrap .login_container .member form .login_btn #login {}
+main .login_wrap .login_container .member form .search_join {
+    margin: 10px 0 40px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .login_wrap .login_container .member form .search_join > a {
+    color: #AAA;
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+main .login_wrap .login_container .member .simple {
+    text-align: center;
+}
+main .login_wrap .login_container .member .simple .txt {}
+main .login_wrap .login_container .member .simple .txt h2 {
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+main .login_wrap .login_container .member .simple .txt p {
+    margin: 10px 0 40px; color: #AAA;
+    font-size: 0.94rem; letter-spacing: -0.02rem; line-height: 1.6;
+}
+main .login_wrap .login_container .member .simple .sns_join {}
+main .login_wrap .login_container .member .simple .sns_join > a {}
+main .login_wrap .login_container .member .simple .sns_join > a > img {}
+
+/* 비회원로그인 */
+main .login_wrap .login_container .non_member {}
+main .login_wrap .login_container .non_member > form {}
+main .login_wrap .login_container .non_member > form .login_box {}
+main .login_wrap .login_container .non_member > form .login_box > ul {}
+main .login_wrap .login_container .non_member > form .login_box > ul > li {
+    background-color: #FFF;
+    border: 1px solid #E0E0E0; border-radius: 10px;
+    padding: 15px 20px;
+}
+main .login_wrap .login_container .non_member > form .login_box > ul > li:first-child{
+    margin-bottom: 10px;
+}
+main .login_wrap .login_container .non_member > form .login_box > ul > li > input {}
+main .login_wrap .login_container .non_member > form .login_box > ul > li > #order_num {}
+main .login_wrap .login_container .non_member > form .login_box > ul > li > #order_pw {}
+main .login_wrap .login_container .non_member > form .login_box > ul > li > input::placeholder {
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+main .login_wrap .login_container .non_member > form > p {
+    margin: 40px 0; color: #AAA;
+    font-size: 0.94rem; letter-spacing: -0.02rem;
+}
+main .login_wrap .login_container .non_member > form > .login_btn {
+    background-color: #FFD400; text-align: center;
+    padding: 15px 0; border-radius: 10px;
+}
+main .login_wrap .login_container .non_member > form > .login_btn button {}
+main .login_wrap .login_container .non_member > form > .login_btn button {}

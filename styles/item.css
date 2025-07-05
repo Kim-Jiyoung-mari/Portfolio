@@ -1,0 +1,316 @@
+main {
+    width: 1500px; margin: 150px auto;
+}
+main .main_contents {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+
+/* (왼쪽) 상품 썸네일 */
+main .main_contents .left_wrap {}
+main .main_contents .left_wrap .left_thum {}
+main .main_contents .left_wrap .left_thum .big_img {
+    width: 690px;
+    display:block; border-radius:5%; overflow:hidden;
+}
+main .main_contents .left_wrap .left_thum .big_img > img {width: 100%;}
+main .main_contents .left_wrap .left_thum .thumnail {
+    padding-top: 50px; display: flex;
+}
+main .main_contents .left_wrap .left_thum .thumnail > a {
+    margin-right: 15px;
+}
+main .main_contents .left_wrap .left_thum .thumnail > a > img {width: 100%;}
+main .main_contents .left_wrap .left_thum .thumnail .active {width: 110px;}
+main .main_contents .left_wrap .left_thum .thumnail .active > img {width: 100%}
+
+/* (오른쪽) 상품 정보 */
+main .main_contents .right_info {
+    width: calc(100% - 820px);
+}
+
+/* 그룹선택자 */
+main .main_contents .right_info .item_info,
+main .main_contents .right_info .notice,
+main .main_contents .right_info .order_price {
+    margin-bottom: 35px;
+}
+
+/* 상품정보 - 상품 타이틀/가격/후기 */
+main .main_contents .right_info .item_info {}
+main .main_contents .right_info .item_info .title {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+main .main_contents .right_info .item_info .title h1 {
+    font-size: 1.56rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.02rem;
+}
+main .main_contents .right_info .item_info .title > a {}
+main .main_contents .right_info .item_info .title > a > img {}
+
+main .main_contents .right_info .item_info .item_price {
+    padding: 30px 0;
+}
+main .main_contents .right_info .item_info .item_price p {
+    font-size:3.13rem; font-weight: 700; letter-spacing: -0.02rem;
+}
+main .main_contents .right_info .item_info .item_price p > span {
+    font-size: 1.56rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.02rem;
+}
+
+main .main_contents .right_info .item_info .item_review {}
+main .main_contents .right_info .item_info .item_review p {
+    font-size:  1.44rem; letter-spacing: -0.02rem;
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+main .main_contents .right_info .item_info .item_review p > img {
+    margin: 0 13px;
+}
+main .main_contents .right_info .item_info .item_review p em {
+    font-size:  1.44rem; font-weight:700; letter-spacing: -0.02rem;
+}
+
+/* 상품정보 - 제품 공지 */
+main .main_contents .right_info .notice {
+    border-top: 2px solid #F1F1F1;
+    border-bottom: 2px solid #F1F1F1;
+    padding: 20px 0;
+}
+
+/* 제품 공지 - 그룹선택자 */
+main .main_contents .right_info .notice div {
+    display: flex; flex-flow: row wrap;
+    padding: 15px 25px;
+}
+main .main_contents .right_info .notice .origin,
+main .main_contents .right_info .notice .save,
+main .main_contents .right_info .notice .delivary {
+    margin-bottom: 10px;
+}
+main .main_contents .right_info .notice > * h2 {
+    width: 130px;
+    font-weight:600; line-height: 1.5; letter-spacing: -0.02rem;
+}
+main .main_contents .right_info .notice > * p
+,main .main_contents .right_info .notice .delivary .deli_txt {
+    width: calc(100% - 130px);
+    line-height: 1.5; letter-spacing: -0.02rem;
+}
+main .main_contents .right_info .notice .delivary .deli_txt,
+main .main_contents .right_info .notice .amount .num  {
+    padding: 0;
+}
+
+/* 제품 공지 - 개별선택자 */
+main .main_contents .right_info .notice .origin {}
+main .main_contents .right_info .notice .origin > h2 {}
+main .main_contents .right_info .notice .origin > p {}
+
+main .main_contents .right_info .notice .save {}
+main .main_contents .right_info .notice .save > h2 {}
+main .main_contents .right_info .notice .save > p {}
+
+main .main_contents .right_info .notice .delivary {
+}
+main .main_contents .right_info .notice .delivary > h2 {}
+main .main_contents .right_info .notice .delivary .deli_txt {}
+main .main_contents .right_info .notice .delivary .deli_txt > p {}
+main .main_contents .right_info .notice .delivary .deli_txt > p:first-child {
+    display: flex; flex-flow: row nowrap; align-items: center;
+    padding-bottom: 10px;
+}
+main .main_contents .right_info .notice .delivary .deli_txt > p > span {
+    color: rgba(255, 0, 0, 1);
+    padding: 0 10px;
+}
+main .main_contents .right_info .notice .delivary .deli_txt > p > .deli_info {}
+main .main_contents .right_info .notice .delivary .deli_txt > p > .deli_info > img {}
+
+main .main_contents .right_info .notice .amount {}
+main .main_contents .right_info .notice .amount > h2 {}
+main .main_contents .right_info .notice .amount .num {}
+main .main_contents .right_info .notice .amount .num button {}
+main .main_contents .right_info .notice .amount .num button img {}
+main .main_contents .right_info .notice .amount .num #minus {}
+main .main_contents .right_info .notice .amount .num #plus {}
+main .main_contents .right_info .notice .amount .num input {
+    width: 65px; height: 40px; margin: 0 10px;
+    border: 1px solid #d9d9d9; color: #888; text-align: center;
+    font-size: 0.88rem; letter-spacing: -0.02rem;
+
+}
+main .main_contents .right_info .notice .amount .num #amount_num {}
+
+/* 상품정보 - 주문금액 */
+main .main_contents .right_info .order_price {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding: 15px 25px;
+}
+main .main_contents .right_info .order_price > h2 {
+    font-size:  1.25rem; font-weight:500; line-height: 1.5; letter-spacing: -0.02rem;
+}
+main .main_contents .right_info .order_price > p {
+    color: rgba(255, 0, 0, 1);
+    font-size:  1.25rem; font-weight:500; line-height: 1.5; letter-spacing: -0.02rem;
+}
+main .main_contents .right_info .order_price > p > .or_price {
+    padding-right: 5px;
+    font-size: 1.56rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.02rem;
+}
+
+/* 상품정보 - 주문버튼 */
+main .main_contents .right_info .order_btn {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .main_contents .right_info .order_btn > button {
+    height: 60px;
+    font-size:  1.25rem; letter-spacing: -0.02rem;
+    border: 1px solid #d9d9d9; border-radius: 10px;
+}
+/* 주문버튼 - 그룹선택자 */
+main .main_contents .right_info .order_btn .cart,
+main .main_contents .right_info .order_btn .order {
+    width: 300px;
+    transition: background-color 0.5s;
+}
+main .main_contents .right_info .order_btn .cart:hover,
+main .main_contents .right_info .order_btn .order:hover,
+main .main_contents .right_info .order_btn .like:hover,
+main .main_contents .right_info .order_btn .present:hover {
+    background-color: rgba(255, 0, 0, 1); color: #FFF;
+}
+
+/* 주문버튼 - 개별선택자 */
+main .main_contents .right_info .order_btn .like {
+    width: 60px;
+    transition: background-color 0.5s;
+}
+main .main_contents .right_info .order_btn .cart {}
+main .main_contents .right_info .order_btn .order {}
+
+
+/* =====================================배송팝업창 */
+main .main_contents .notice_bg {
+    background-color: rgba(217, 217, 217, 0.5);
+    width: 100%; height: 100vh;
+    position:fixed; left: 0; top: 0;
+}
+main .main_contents .notice_bg .notice_wrap {
+    background-color: #FFF;
+    width: 420px; height: 700px; overflow:auto; overflow-x: hidden;
+    margin: 80px auto;
+    padding: 50px 30px;
+    border: 1px solid #AAA;
+}
+main .main_contents .notice_bg .notice_wrap::-webkit-scrollbar-thumb {
+    margin: 10px 0;
+}
+/* 그룹선택자 */
+main .main_contents .notice_bg .notice_wrap > * {
+    padding-bottom: 50px;
+}
+main .main_contents .notice_bg .notice_wrap > * h3 {
+    padding-bottom: 15px;
+    font-size: 0.94rem; font-weight: 500; letter-spacing: -0.02rem;
+}
+main .main_contents .notice_bg .notice_wrap > * p {
+    color: #AAA;
+    font-size: 0.94rem; line-height: 1.5; letter-spacing: -0.02rem;
+}
+/* 개별선택자 */
+main .main_contents .notice_bg .notice_wrap .close_btn {text-align: right;}
+main .main_contents .notice_bg .notice_wrap .close_btn button {}
+main .main_contents .notice_bg .notice_wrap .close_btn #close {}
+main .main_contents .notice_bg .notice_wrap .close_btn #close > img {}
+
+main .main_contents .notice_bg .notice_wrap > h2 {
+    text-align: center;
+}
+main .main_contents .notice_bg .notice_wrap > h2 a {}
+main .main_contents .notice_bg .notice_wrap > h2 a img {}
+
+main .main_contents .notice_bg .notice_wrap .deli_notice {}
+main .main_contents .notice_bg .notice_wrap .deli_notice > h3 {}
+main .main_contents .notice_bg .notice_wrap .deli_notice > .notice_txt {}
+main .main_contents .notice_bg .notice_wrap .deli_notice > .notice_txt > p {}
+
+main .main_contents .notice_bg .notice_wrap .deli_type {}
+main .main_contents .notice_bg .notice_wrap .deli_type > h3 {
+    border-bottom: 2px solid #000;
+}
+main .main_contents .notice_bg .notice_wrap .deli_type dl {
+    display: flex; flex-flow: row wrap;
+}
+main .main_contents .notice_bg .notice_wrap .deli_type dl dt {
+    width: 66px; padding: 15px 0;
+    font-size: 0.94rem; line-height: 1.5; letter-spacing: -0.02rem;
+    color: #222;
+}
+main .main_contents .notice_bg .notice_wrap .deli_type dl dd {
+    width: calc(100% - 66px); padding: 15px 0;
+    font-size: 0.94rem; line-height: 1.5; letter-spacing: -0.02rem;
+    color: #AAA;
+}
+main .main_contents .notice_bg .notice_wrap .deli_type dl dd > span {}
+main .main_contents .notice_bg .notice_wrap .deli_type dl dd:first-of-type > span {color: #FF0000;}
+main .main_contents .notice_bg .notice_wrap .deli_type dl dd:last-of-type > span {color: #0000FF;}
+
+main .main_contents .notice_bg .notice_wrap .deli_add {}
+main .main_contents .notice_bg .notice_wrap .deli_add > h3 {}
+main .main_contents .notice_bg .notice_wrap .deli_add > .notice_txt {}
+main .main_contents .notice_bg .notice_wrap .deli_add > .notice_txt > p {}
+
+main .main_contents .notice_bg .notice_wrap .deli_period {}
+main .main_contents .notice_bg .notice_wrap .deli_period > h3 {}
+main .main_contents .notice_bg .notice_wrap .deli_period > .notice_txt {}
+main .main_contents .notice_bg .notice_wrap .deli_period > .notice_txt > p {}
+
+main .main_contents .notice_bg .notice_wrap .deli_company {padding-bottom: 0;}
+main .main_contents .notice_bg .notice_wrap .deli_company > h3 {}
+main .main_contents .notice_bg .notice_wrap .deli_company > .notice_txt {}
+main .main_contents .notice_bg .notice_wrap .deli_company > .notice_txt > p {}
+main .main_contents .notice_bg .notice_wrap .deli_company > .notice_txt > p > span {}
+
+/* =====================================장바구니 팝업 */
+main .main_contents .cart_bg {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    width: 100%; height: 100vh;
+    position:fixed; left: 0; top: 0;
+}
+main .main_contents .cart_bg .cart_wrap {
+    background-color: #FFF;
+    width: 450px; margin: 300px auto;
+    padding: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+main .main_contents .cart_bg .cart_wrap .title_close {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .main_contents .cart_bg .cart_wrap .title_close > h3 {
+    font-size: 1.56rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.02rem;
+}
+main .main_contents .cart_bg .cart_wrap .title_close .close_btn {}
+main .main_contents .cart_bg .cart_wrap .title_close .close_btn > button {}
+main .main_contents .cart_bg .cart_wrap .title_close .close_btn #close {}
+main .main_contents .cart_bg .cart_wrap .title_close .close_btn #close > img {}
+
+main .main_contents .cart_bg .cart_wrap .cart_txt {
+    margin: 80px 0; padding: 50px 0 ; 
+    text-align: center; color: #AAA;
+    font-size: 1.06rem; font-weight: 500; letter-spacing: -0.02rem;
+    border: 1px solid #FF0000; border-radius: 20px;
+}
+
+main .main_contents .cart_bg .cart_wrap .cart_btn {}
+main .main_contents .cart_bg .cart_wrap .cart_btn > a {
+    display: inline-block; width: 173px;
+    text-align: center; padding: 23px 0;
+    border: 1px solid #f7f7f7; border-radius: 20px;
+    transition: background-color 0.7s;
+}
+
+main .main_contents .cart_bg .cart_wrap .cart_btn > a:hover {
+    background-color: #FF0000; color: #FFF;
+}
+main .main_contents .cart_bg .cart_wrap .cart_btn .shopping {}
+main .main_contents .cart_bg .cart_wrap .cart_btn .move {}
