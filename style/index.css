@@ -1,0 +1,368 @@
+/* ===================================== 헤더 */
+.h_bg {
+    width: 100%; padding: 20px 80px;
+    position: fixed; z-index: 999;
+}
+.h_bg header {
+    max-width: 1500px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.h_bg header nav {}
+.h_bg header nav > ul {}
+.h_bg header nav > ul li {float: left; padding-right: 50px;}
+.h_bg header nav > ul li:last-child {padding: 0;}
+.h_bg header nav > ul li a {}
+.h_bg header nav > ul li .nav_active {
+    background-color: #222; color: #FFF;
+    padding: 7px 20px; border-radius: 20px;
+}
+.h_bg header .h_right {}
+.h_bg header .h_right > a {font-weight: 600; line-height: 1.6;}
+
+/* ===================================== 그룹 선택자 */
+.h_bg header nav > ul li a,
+.h_bg header .h_right > a {font-weight: 600; line-height: 1.6;}
+
+/* ===================================== 공통스와이퍼 */
+#main {width: 100%; height: 100vh;}
+#main .swiper-wrapper {}
+#main .swiper-wrapper .swiper-slide {}
+
+/* ===================================== 마우스 스크롤 START*/
+.scroll_bg {
+    position: fixed; right: 50px; bottom: 50px; z-index: 700;
+    width: 35px; height: 55px; border: 2px solid #222;
+    border-radius: 30px;
+}
+.scroll_bg .scroll {
+    background-color: #222; width: 5px; height: 10px;
+    border-radius: 30px; margin-top: 10px; 
+    position: relative; left: 13px;
+}
+.scroll_bg .scroll::before {
+    position: absolute;
+    content: ''; width: 15px; height: 15px; border: none;
+    border-right: 2px solid #222;
+    border-top: 2px solid #222;
+    transform: translateY(-10px) rotate(135deg) scale(0.4);
+    left: -6px; margin-top: 10px; opacity: 0;
+}
+/* ===================================== 마우스 스크롤 END*/
+
+
+/* ===================================== 메인 1행 인트로*/
+#main .swiper-wrapper .intro {}
+#main .swiper-wrapper .intro h1 {
+    max-width: 530px; margin: 140px auto;
+    position: relative; top: 30px;
+}
+#main .swiper-wrapper .intro h1 > img {width: 100%;}
+#main .swiper-wrapper .intro .bg_ani {
+    background: url(../image/intro.png) repeat-x;
+    width: 100%; height: 200px;
+    position: relative; top: 70px;
+}
+
+/* ===================================== 메인 2행 프로필*/
+#main .swiper-wrapper .profile {
+    padding: 134px 0;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    max-width: 1500px; margin: 0 auto; 
+}
+/* ===================================== 메인 2행 프로필 (왼쪽)*/
+#main .swiper-wrapper .profile .left {}
+#main .swiper-wrapper .profile .left .idimg {max-width: 300px; padding-bottom: 20px;}
+#main .swiper-wrapper .profile .left .idimg > img {width: 100%;}
+#main .swiper-wrapper .profile .left .about {}
+#main .swiper-wrapper .profile .left .about h3 {}
+#main .swiper-wrapper .profile .left .about .about_txt {}
+#main .swiper-wrapper .profile .left .about .about_txt > li {}
+#main .swiper-wrapper .profile .left .about .about_txt > li > a {}
+/* ===================================== 메인 2행 프로필 (오른쪽)*/
+#main .swiper-wrapper .profile .right {
+    width: calc(100% - 400px);
+}
+
+/* ===================================== 프로필 공통/모든 선택자*/
+#main .swiper-wrapper .profile > * h3 {
+    padding-bottom: 20px;
+    font-size: 1.44rem; font-weight: 500; line-height: 1.6;
+}
+#main .swiper-wrapper .profile > * li {
+    padding-bottom: 10px; line-height: 1.6;
+}
+
+/* =========================================================프로필 (오른쪽-위)*/
+#main .swiper-wrapper .profile .right .right_top {
+    text-align: center; margin-bottom: 120px;
+}
+#main .swiper-wrapper .profile .right .right_top > h2 {
+    font-size: 2.69rem; font-weight: 400; line-height: 1.6;
+    padding-bottom: 26px;
+}
+#main .swiper-wrapper .profile .right .right_top > p {
+    font-size: 1.44rem; font-weight: 500; line-height: 1.6;
+}
+#main .swiper-wrapper .profile .right .right_top > p > span {font-size: 1.25rem;}
+/* =========================================================프로필 (오른쪽-아래)*/
+#main .swiper-wrapper .profile .right .right_btm {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#main .swiper-wrapper .profile .right .right_btm .btm_left {}
+/* =========================================================프로필 (오른쪽-경험)*/
+#main .swiper-wrapper .profile .right .right_btm .btm_left .experience {margin-bottom: 50px;}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .experience > h3 {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .experience > .experience_txt {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .experience > .experience_txt > li {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .experience > .experience_txt > li > em {
+    font-weight: 600; line-height: 1.6;
+    padding-right: 20px;
+}
+/* =========================================================프로필 (오른쪽-라이센스)*/
+#main .swiper-wrapper .profile .right .right_btm .btm_left .license {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .license > h3 {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .license > .license_txt {}
+#main .swiper-wrapper .profile .right .right_btm .btm_left .license > .license_txt > li {}
+/* =========================================================프로필 (오른쪽-스킬)*/
+#main .swiper-wrapper .profile .right .right_btm .btm_skills {
+    width: calc(100% - 640px);
+}
+#main .swiper-wrapper .profile .right .right_btm .btm_skills > h3 {padding-bottom: 50px;}
+#main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt {
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+}
+#main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li {
+    width: 100px; text-align: center; padding-bottom: 25px;
+}
+#main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li .loading {
+    width: 60px; height: 60px; margin-bottom: 20px; position: relative; left: 17px;
+}
+#main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li {line-height: 1.6;}
+
+/* ===================================== 리디자인 프로젝트 (공통) */
+#main .swiper-wrapper #redesign {
+    margin: 0;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#main .swiper-wrapper #redesign .project_info {
+    width: 775px; position: relative;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents {
+    position: absolute; left: 214px; top: 219px;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_title > h2 {
+    font-size: 2.69rem; font-weight: 400; line-height: 1.6;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_title > .pj_txt {
+    max-width: 450px;
+    color: #AAA; line-height: 1.6;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail {margin: 80px 0;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con {padding-bottom: 15px;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con > li {line-height: 1.6;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive {
+    display: flex;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > li {
+    width: 150px;
+    padding: 5px 15px; text-align: center;
+    border-bottom: 1px solid #aaa; 
+    font-weight: 600; line-height: 1.6; color: #AAA;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > li:nth-child(2){margin: 0 10px;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > a {line-height: 1.6;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .proto {
+    background-color: #222; color: #FFF;
+    padding: 10px 15px; border-radius: 10px; margin-right: 10px;
+    transition: all 0.8s;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .proto:hover{
+    padding: 10px 30px;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .before {
+    padding: 10px 15px; border-radius: 10px;
+    transition: all 0.8s;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .before:hover{
+    padding: 10px 30px;
+}
+#main .swiper-wrapper #redesign .project_img {
+    width: calc(100% - 775px);
+    position: relative;
+}
+#main .swiper-wrapper #redesign .project_img > p {}
+#main .swiper-wrapper #redesign .project_img > p > img{
+    width: 70%;
+    position: absolute; left: 80px; top: 120px;
+}
+
+/* ===================================== 메인 3행 프로젝트-안다르*/
+#main .swiper-wrapper .andar {}
+#main .swiper-wrapper .andar .project_info {}
+#main .swiper-wrapper .andar .project_info .pj_contents {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_title > h2 {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_title > .pj_txt {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .pj_con {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .pj_con > li {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .reponsive {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .reponsive > li {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > a {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .proto {}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .before {background-color: #FFD7C1;}
+#main .swiper-wrapper .andar .project_img {background-color: #FFD7C1; }
+#main .swiper-wrapper .andar .project_img img{}
+
+/* ===================================== 메인 4행 프로젝트-플리토*/
+#main .swiper-wrapper .flito {}
+#main .swiper-wrapper .flito .project_info {}
+#main .swiper-wrapper .flito .project_info .pj_contents {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_title > h2 {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_title > .pj_txt {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .pj_con {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .pj_con > li {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .reponsive {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .reponsive > li {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > a {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > .proto {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > .before {background-color: #F1E9FF;}
+#main .swiper-wrapper .flito .project_img {background-color: #F1E9FF; }
+#main .swiper-wrapper .flito .project_img img{}
+
+/* ===================================== 메인 5행 프로젝트-마데카프라임*/
+#main .swiper-wrapper .prime {}
+#main .swiper-wrapper .prime .project_info {}
+#main .swiper-wrapper .prime .project_info .pj_contents {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_title > h2 {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_title > .pj_txt {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .pj_con {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .pj_con > li {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .reponsive {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .reponsive > li {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > a {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .proto {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .before {
+    background-color: #8787A1; color: #FFF;
+}
+#main .swiper-wrapper .prime .project_img {background-color: #8787A1; }
+#main .swiper-wrapper .prime .project_img img{}
+
+/* ===================================== 메인 6행 프로젝트-오뚜기몰*/
+#main .swiper-wrapper .otuki {}
+#main .swiper-wrapper .otuki .project_info {}
+#main .swiper-wrapper .otuki .project_info .pj_contents {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_title > h2 {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_title > .pj_txt {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .pj_con {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .pj_con > li {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .reponsive {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .reponsive > li {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > a {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > .proto {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > .before {background-color: #FBF2C4;}
+#main .swiper-wrapper .otuki .project_img {background-color: #FBF2C4; }
+#main .swiper-wrapper .otuki .project_img img{}
+
+/* ===================================== 메인 7행 디자인*/
+#main .swiper-wrapper .design {}
+#main .swiper-wrapper .design .contents {
+    width: 80%; margin: 150px auto 0; display: block;
+}
+#main .swiper-wrapper .design .contents .left {
+    float: left; width: calc(100% - 450px);
+    position: relative; top: 70px;
+}
+/* =================================================== 디자인프로젝트 : 배너 */
+#main .swiper-wrapper .design .contents .left .banner {
+    width: 100%;  height: 130px; border-radius: 20px;
+    background-color: #F5F5F5;
+    margin-bottom: 30px;
+}
+#main .swiper-wrapper .design .contents .left .banner .swiper-wrapper {
+    transition-timing-function: linear;
+}
+#main .swiper-wrapper .design .contents .left .banner .swiper-wrapper .b {cursor: pointer;}
+#main .swiper-wrapper .design .contents .left .banner .swiper-wrapper .b > img {
+    width: 100%; transition: all 0.5s;
+}
+#main .swiper-wrapper .design .contents .left .banner .swiper-wrapper .b > img:hover {
+    transform: rotate(-7deg);
+}
+
+/* =================================================== 디자인프로젝트 : SNS광고 */
+#main .swiper-wrapper .design .contents .left .sns {
+    width: 100%; height: 350px; border-radius: 20px;
+} 
+#main .swiper-wrapper .design .contents .left .sns .swiper-wrapper {
+    transition-timing-function: linear;
+} 
+#main .swiper-wrapper .design .contents .left .sns .swiper-wrapper .s {cursor: pointer;} 
+#main .swiper-wrapper .design .contents .left .sns .swiper-wrapper .s > img {
+    width: 100%; transition: all 0.5s;
+} 
+#main .swiper-wrapper .design .contents .left .sns .swiper-wrapper .s > img:hover {
+    transform: rotate(-7deg);
+} 
+
+#main .swiper-wrapper .design .contents .right {float: right;}
+/* =================================================== 디자인프로젝트 : 상세페이지 */
+#main .swiper-wrapper .design .contents .right .detail {
+    width: 400px; height: 700px; border-radius: 20px;
+}
+#main .swiper-wrapper .design .contents .right .detail .swiper-wrapper {}
+#main .swiper-wrapper .design .contents .right .detail .swiper-wrapper .de {cursor: pointer;}
+#main .swiper-wrapper .design .contents .right .detail .swiper-wrapper .de > img {
+    width: 100%; transition: all 0.5s;
+}
+#main .swiper-wrapper .design .contents .right .detail .swiper-wrapper .de > img:hover {
+    transform: rotate(2deg)
+}
+#main .swiper-wrapper .design .contents .right .detail .swiper-pagination-bullet {}
+#main .swiper-wrapper .design .contents .right .detail .swiper-pagination-bullet-active {
+    background-color: #222;
+}
+/* =================================================== 디자인프로젝트 : 팝업 START */
+#main .popup_bg {
+    position: fixed; left: 0; top: 0;
+    width: 100%; height: 100vh; z-index:800;
+    background: rgba(0,0,0,0.5);
+}
+#main .popup_bg .scroll_wrap {
+    width: 700px; height: 85vh; overflow: auto;
+    margin: 90px auto 0;
+}
+#main .popup_bg .scroll_wrap > img {width: 100%;}
+/* =================================================== 디자인프로젝트 : 팝업 END */
+
+/* ===================================== 메인 8행 아웃트로*/
+#main .swiper-wrapper .outro {
+    width: 350px; margin: 210px auto;
+}
+#main .swiper-wrapper .outro > h3 {
+    text-align: center;
+    font-size: 1.44rem; font-weight: 500; line-height: 1.6;
+}
+#main .swiper-wrapper .outro > .selfca {width: 300px; padding: 40px 0; margin: 0 auto;}
+#main .swiper-wrapper .outro > .selfca > img {width: 100%;}
+#main .swiper-wrapper .outro .info {
+    width: 350px;
+    display: flex; flex-flow: row nowrap; 
+    justify-content: center; align-items: center;
+}
+#main .swiper-wrapper .outro .info .qrcode {width: 100px;}
+#main .swiper-wrapper .outro .info .qrcode > img {width: 100%;}
+#main .swiper-wrapper .outro .info > .about_txt {padding-left: 20px;}
+#main .swiper-wrapper .outro .info > .about_txt > li {line-height: 1.6;}
