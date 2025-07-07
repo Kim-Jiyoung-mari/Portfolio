@@ -198,6 +198,10 @@
     position: absolute; left: 80px; top: 120px;
 }
 
+#main .swiper-wrapper #redesign .web .swiper-scrollbar {
+    bottom: 12px;
+}
+
 /* ===================================== 메인 3행 프로젝트-안다르*/
 #main .swiper-wrapper .andar {}
 #main .swiper-wrapper .andar .project_info {}

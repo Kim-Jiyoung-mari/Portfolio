@@ -4,6 +4,15 @@ const main = new Swiper('#main',{
     direction:'vertical',
     behavior:'smooth',
     speed: 1000,
+    on: {
+        slideChangeTransitionEnd: function(){
+            for(let i of nav) i.classList.remove('nav_active')
+            nav[this.activeIndex].classList.add('nav_active')
+            setTimeout(()=>{
+                ScrollTrigger.refresh();
+            },0)
+        },
+    },
 });
 
 const bnrSlide = new Swiper('.design .left .banner',{
@@ -17,6 +26,16 @@ const bnrSlide = new Swiper('.design .left .banner',{
     },
 });
 
+//프로젝트 슬라이드
+const webProject = new Swiper('.web',{
+    autoplay:{delay:3500,},
+    loop: true,
+    scrollbar: {
+        el: '.web .swiper-scrollbar',
+    },
+})
+
+//디자인 슬라이드
 const snsSlide = new Swiper('.design .left .sns',{
     autoplay:{delay:0},
     loop:true,
@@ -70,14 +89,14 @@ nav.forEach((t, i)=>{
     })
 })
 
-design.addEventListener('click',function(e){ //3행 소개영역으로 이동
+design.addEventListener('click',function(e){ //4행 디자인 소개영역으로 이동
     e.preventDefault();
-    main.slideTo(6, 1000);
+    main.slideTo(3, 1000);
 });
 
-contact.addEventListener('click',function(e){ //6행 소개영역으로 이동
+contact.addEventListener('click',function(e){ //5행 연락 소개영역으로 이동
     e.preventDefault();
-    main.slideTo(7, 1000);
+    main.slideTo(4, 1000);
 });
 
 //팝업 띄우기
