@@ -2,6 +2,8 @@
 .h_bg {
     width: 100%; padding: 20px 80px;
     position: fixed; z-index: 999;
+    background-color: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 .h_bg header {
     max-width: 1500px; margin: 0 auto;
@@ -17,11 +19,11 @@
     padding: 7px 20px; border-radius: 20px;
 }
 .h_bg header .h_right {}
-.h_bg header .h_right > a {font-weight: 600; line-height: 1.6;}
+.h_bg header .h_right > a {}
 
 /* ===================================== 그룹 선택자 */
 .h_bg header nav > ul li a,
-.h_bg header .h_right > a {font-weight: 600; line-height: 1.6;}
+.h_bg header .h_right > a {line-height: 1.6;}
 
 /* ===================================== 공통스와이퍼 */
 #main {width: 100%; height: 100vh;}
@@ -147,28 +149,37 @@
 #main .swiper-wrapper #redesign .project_info {
     width: 775px; position: relative;
 }
+#main .swiper-wrapper #redesign .project_info::before {
+    display: block; content: '';
+    width: 775px; height: 100%;
+    background-color: rgba(5, 5, 5, 0.5);
+}
 #main .swiper-wrapper #redesign .project_info .pj_contents {
     position: absolute; left: 214px; top: 219px;
 }
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_title {}
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_title > h2 {
-    font-size: 2.69rem; font-weight: 400; line-height: 1.6;
+    color: #f9f9f9;
+    font-size: 2.69rem; font-weight: 700; line-height: 1.6;
 }
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_title > .pj_txt {
     max-width: 450px;
-    color: #AAA; line-height: 1.6;
+    color: #f9f9f9; line-height: 1.6;
 }
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail {margin: 80px 0;}
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con {padding-bottom: 15px;}
-#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con > li {line-height: 1.6;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con > li {
+    color: #f9f9f9;
+    line-height: 1.6;
+}
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive {
     display: flex;
 }
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > li {
     width: 150px;
     padding: 5px 15px; text-align: center;
-    border-bottom: 1px solid #aaa; 
-    font-weight: 600; line-height: 1.6; color: #AAA;
+    border-bottom: 1px solid #f9f9f9; 
+    font-weight: 600; line-height: 1.6; color: #f9f9f9;
 }
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > li:nth-child(2){margin: 0 10px;}
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn {}
@@ -204,7 +215,9 @@
 
 /* ===================================== 메인 3행 프로젝트-안다르*/
 #main .swiper-wrapper .andar {}
-#main .swiper-wrapper .andar .project_info {}
+#main .swiper-wrapper .andar .project_info {
+    background-image: url(../image/andar_left.jpg);
+}
 #main .swiper-wrapper .andar .project_info .pj_contents {}
 #main .swiper-wrapper .andar .project_info .pj_contents .pj_title {}
 #main .swiper-wrapper .andar .project_info .pj_contents .pj_title > h2 {}
@@ -223,7 +236,9 @@
 
 /* ===================================== 메인 4행 프로젝트-플리토*/
 #main .swiper-wrapper .flito {}
-#main .swiper-wrapper .flito .project_info {}
+#main .swiper-wrapper .flito .project_info {
+    background-image: url(../image/flito_left.jpg);
+}
 #main .swiper-wrapper .flito .project_info .pj_contents {}
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_title {}
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_title > h2 {}
@@ -236,13 +251,15 @@
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_btn {}
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > a {}
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > .proto {}
-#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > .before {background-color: #F1E9FF;}
-#main .swiper-wrapper .flito .project_img {background-color: #F1E9FF; }
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > .before {background-color: #E0F9FF;}
+#main .swiper-wrapper .flito .project_img {background-color: #E0F9FF; }
 #main .swiper-wrapper .flito .project_img img{}
 
 /* ===================================== 메인 5행 프로젝트-마데카프라임*/
 #main .swiper-wrapper .prime {}
-#main .swiper-wrapper .prime .project_info {}
+#main .swiper-wrapper .prime .project_info {
+    background-image: url(../image/prime_left.jpg);
+}
 #main .swiper-wrapper .prime .project_info .pj_contents {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_title {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_title > h2 {}
@@ -258,12 +275,14 @@
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .before {
     background-color: #8787A1; color: #FFF;
 }
-#main .swiper-wrapper .prime .project_img {background-color: #8787A1; }
+#main .swiper-wrapper .prime .project_img {background-color: #E0E0FF; }
 #main .swiper-wrapper .prime .project_img img{}
 
 /* ===================================== 메인 6행 프로젝트-오뚜기몰*/
 #main .swiper-wrapper .otuki {}
-#main .swiper-wrapper .otuki .project_info {}
+#main .swiper-wrapper .otuki .project_info {
+    background-image: url(../image/otuki_left.jpg);
+}
 #main .swiper-wrapper .otuki .project_info .pj_contents {}
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_title {}
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_title > h2 {}
