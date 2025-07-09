@@ -110,7 +110,11 @@
 #main .swiper-wrapper .profile .right .right_btm {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
-#main .swiper-wrapper .profile .right .right_btm .btm_left {}
+#main .swiper-wrapper .profile .right .right_btm #profile1 {opacity: 0;}
+#main .swiper-wrapper .profile .right .right_btm .btm_left {
+    padding: 20px; border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
 /* =========================================================프로필 (오른쪽-경험)*/
 #main .swiper-wrapper .profile .right .right_btm .btm_left .experience {margin-bottom: 50px;}
 #main .swiper-wrapper .profile .right .right_btm .btm_left .experience > h3 {}
@@ -128,6 +132,8 @@
 /* =========================================================프로필 (오른쪽-스킬)*/
 #main .swiper-wrapper .profile .right .right_btm .btm_skills {
     width: calc(100% - 640px);
+    padding: 20px; border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
 }
 #main .swiper-wrapper .profile .right .right_btm .btm_skills > h3 {padding-bottom: 50px;}
 #main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt {
@@ -152,7 +158,7 @@
 #main .swiper-wrapper #redesign .project_info::before {
     display: block; content: '';
     width: 775px; height: 100%;
-    background-color: rgba(5, 5, 5, 0.5);
+    background-color: rgba(5, 5, 5, 0.6);
 }
 #main .swiper-wrapper #redesign .project_info .pj_contents {
     position: absolute; left: 214px; top: 219px;
@@ -167,25 +173,39 @@
     color: #f9f9f9; line-height: 1.6;
 }
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail {margin: 80px 0;}
-#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con {padding-bottom: 15px;}
-#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con > li {
-    color: #f9f9f9;
-    line-height: 1.6;
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con {
+    padding-bottom: 15px;
+    display: flex; flex-flow: row wrap;
+    color: #f9f9f9; line-height: 1.6;
 }
-#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive {
-    display: flex;
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con dt {
+    width: 85px; padding-bottom: 15px;
+    font-weight: 700;
 }
-#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > li {
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .pj_con dd {
+    width: calc(100% - 85px); padding-bottom: 15px;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive {}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > dt {
+    color: #f9f9f9; font-weight: 700;
+    padding-bottom: 15px;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > dd {
+    display: flex; flex-flow: row nowrap;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > dd > span {
     width: 150px;
     padding: 5px 15px; text-align: center;
     border-bottom: 1px solid #f9f9f9; 
     font-weight: 600; line-height: 1.6; color: #f9f9f9;
 }
-#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > li:nth-child(2){margin: 0 10px;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_detail > .reponsive > dd > span:nth-child(2){margin: 0 10px;}
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn {}
-#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > a {line-height: 1.6;}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > a {
+    line-height: 1.6; font-weight: 600;
+}
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .proto {
-    background-color: #222; color: #FFF;
+    background-color: #444; color: #FFF;
     padding: 10px 15px; border-radius: 10px; margin-right: 10px;
     transition: all 0.8s;
 }
@@ -245,7 +265,8 @@
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_title > .pj_txt {}
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_detail {}
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .pj_con {}
-#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .pj_con > li {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .pj_con dt {}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .pj_con dd {}
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .reponsive {}
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .reponsive > li {}
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_btn {}
@@ -266,9 +287,12 @@
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_title > .pj_txt {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_detail {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .pj_con {}
-#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .pj_con > li {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .pj_con dt {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .pj_con dd {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .reponsive {}
-#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .reponsive > li {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .reponsive > dt {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .reponsive > dd {}
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .reponsive > dd > span {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_btn {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > a {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .proto {}
@@ -289,9 +313,12 @@
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_title > .pj_txt {}
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail {}
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .pj_con {}
-#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .pj_con > li {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .pj_con dt {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .pj_con dd {}
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .reponsive {}
-#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .reponsive > li {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .reponsive > dt {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .reponsive > dd {}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .reponsive > dd > span {}
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn {}
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > a {}
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > .proto {}
