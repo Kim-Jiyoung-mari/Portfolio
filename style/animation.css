@@ -53,38 +53,40 @@
     stroke-dasharray:360; /* 원의 둘레를 380으로 설정하여 dash 효과를 적용 */
     stroke-dashoffset: 360; /* 초기 상태 설정 */
 }
-
+.btm_skills .skill_txt li .loading .circle {
+    transition: opacity 0.5s ease both; ;
+}
 .btm_skills .skill_txt li .loading1 .circle {
     opacity: 0;
-    animation: photoShop 2s ease both;
+    /* animation: photoShop 2s ease both; */
 }
 .btm_skills .skill_txt li .loading2 .circle {
     opacity: 0;
-    animation: illustratior 2s 0.2s ease both;
+    /* animation: illustratior 2s 0.2s ease both; */
 }
 .btm_skills .skill_txt li .loading3 .circle {
     opacity: 0;
-    animation: premiere 2s 0.4s ease both;
+    /* animation: premiere 2s 0.4s ease both; */
 }
 .btm_skills .skill_txt li .loading4 .circle {
     opacity: 0;
-    animation: figma 2s 0.6s ease both;
+    /* animation: figma 2s 0.6s ease both; */
 }
 .btm_skills .skill_txt li .loading5 .circle {
     opacity: 0;
-    animation: html 2s 0.8s ease both;
+    /* animation: html 2s 0.8s ease both; */
 }
 .btm_skills .skill_txt li .loading6 .circle {
     opacity: 0;
-    animation: css 2s 1s ease both;
+    /* animation: css 2s 1s ease both; */
 }
 .btm_skills .skill_txt li .loading7 .circle {
     opacity: 0;
-    animation: javascript 2s 1.2s ease both;
+    /* animation: javascript 2s 1.2s ease both; */
 }
 .btm_skills .skill_txt li .loading8 .circle {
     opacity: 0;
-    animation: github 2s 1.4s ease both;
+    /* animation: github 2s 1.4s ease both; */
 }
 
 /* 원형 애니메이션 */

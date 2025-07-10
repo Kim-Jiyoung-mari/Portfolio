@@ -13,15 +13,16 @@ gsap.to(profileItems1, {
         onEnter: () => {
             gsap.to(profileItems1,{
                 opacity: 1,
-                y: 20,
-                duration: 0.3,
+                y:-40,
+                duration: 0.2,
                 stagger: 0.2, // ★ 순차적으로 등장 ★
             });
+
             // 스킬
             gsap.to(".btm_skills .skill_txt li .loading1 .circle ", {
                 opacity:1,
-                duration:0.4,
-                delay:0.8,
+                duration:0.3,
+                delay:0.3,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading1 .circle").style.animation = 'photoShop 2s ease both';
                 },
@@ -29,7 +30,7 @@ gsap.to(profileItems1, {
             gsap.to(".btm_skills .skill_txt li .loading2 .circle ", {
                 opacity:1,
                 duration:0.4,
-                delay:0.8,
+                delay:0.3,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading2 .circle").style.animation = 'illustratior 2s 0.2s ease both';
                 },
@@ -37,47 +38,47 @@ gsap.to(profileItems1, {
             gsap.to(".btm_skills .skill_txt li .loading3 .circle ", {
                 opacity:1,
                 duration:0.5,
-                delay:0.9,
+                delay:0.4,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading3 .circle").style.animation = 'premiere 2s 0.4s ease both';
                 },
             });
             gsap.to(".btm_skills .skill_txt li .loading4 .circle ", {
                 opacity:1,
-                duration:0.5,
-                delay:0.9,
+                duration:0.6,
+                delay:0.4,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading4 .circle").style.animation = 'figma 2s 0.6s ease both';
                 },
             });
             gsap.to(".btm_skills .skill_txt li .loading5 .circle ", {
                 opacity:1,
-                duration:0.6,
-                delay:1,
+                duration:0.5,
+                delay:0.5,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading5 .circle").style.animation = 'html 2s 0.8s ease both';
                 },
             });
             gsap.to(".btm_skills .skill_txt li .loading6 .circle ", {
                 opacity:1,
-                duration:0.6,
-                delay:1,
+                duration:0.5,
+                delay:0.5,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading6 .circle").style.animation = 'css 2s 1s ease both';
                 },
             });
             gsap.to(".btm_skills .skill_txt li .loading7 .circle ", {
                 opacity:1,
-                duration:0.7,
-                delay:1.1,
+                duration:0.6,
+                delay:0.6,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading7 .circle").style.animation = 'javascript 2s 1.2s ease both';
                 },
             });
             gsap.to(".btm_skills .skill_txt li .loading8 .circle ", {
                 opacity:1,
-                duration:0.7,
-                delay:1.1,
+                duration:0.6,
+                delay:0.6,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading8 .circle").style.animation = 'github 2s 1.4s ease both';
                 },
@@ -86,7 +87,7 @@ gsap.to(profileItems1, {
         onLeaveBack: () => {
             gsap.to(profileItems1, {
                 opacity: 0,
-                y: 0,
+                y: -40,
                 duration: 0.5,
                 stagger: 0.1, // ★ 사라질 때도 순차적으로 ★
             });
@@ -99,15 +100,16 @@ gsap.to(profileItems1, {
         onEnterBack: () => {
             gsap.to(profileItems1,{
                 opacity: 1,
-                y: 20,
+                y: -40,
                 duration: 0.8,
                 stagger: 0.2, // ★ 순차적으로 등장 ★
             });
+
             // 스킬
             gsap.to(".btm_skills .skill_txt li .loading1 .circle ", {
                 opacity:1,
-                duration:0.4,
-                delay:0.8,
+                duration:0.3,
+                delay:0.3,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading1 .circle").style.animation = 'photoShop 2s ease both';
                 },
@@ -115,7 +117,7 @@ gsap.to(profileItems1, {
             gsap.to(".btm_skills .skill_txt li .loading2 .circle ", {
                 opacity:1,
                 duration:0.4,
-                delay:0.8,
+                delay:0.3,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading2 .circle").style.animation = 'illustratior 2s 0.2s ease both';
                 },
@@ -123,47 +125,47 @@ gsap.to(profileItems1, {
             gsap.to(".btm_skills .skill_txt li .loading3 .circle ", {
                 opacity:1,
                 duration:0.5,
-                delay:0.9,
+                delay:0.4,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading3 .circle").style.animation = 'premiere 2s 0.4s ease both';
                 },
             });
             gsap.to(".btm_skills .skill_txt li .loading4 .circle ", {
                 opacity:1,
-                duration:0.5,
-                delay:0.9,
+                duration:0.6,
+                delay:0.4,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading4 .circle").style.animation = 'figma 2s 0.6s ease both';
                 },
             });
             gsap.to(".btm_skills .skill_txt li .loading5 .circle ", {
                 opacity:1,
-                duration:0.6,
-                delay:1,
+                duration:0.5,
+                delay:0.5,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading5 .circle").style.animation = 'html 2s 0.8s ease both';
                 },
             });
             gsap.to(".btm_skills .skill_txt li .loading6 .circle ", {
                 opacity:1,
-                duration:0.6,
-                delay:1,
+                duration:0.5,
+                delay:0.5,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading6 .circle").style.animation = 'css 2s 1s ease both';
                 },
             });
             gsap.to(".btm_skills .skill_txt li .loading7 .circle ", {
                 opacity:1,
-                duration:0.7,
-                delay:1.1,
+                duration:0.6,
+                delay:0.6,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading7 .circle").style.animation = 'javascript 2s 1.2s ease both';
                 },
             });
             gsap.to(".btm_skills .skill_txt li .loading8 .circle ", {
                 opacity:1,
-                duration:0.7,
-                delay:1.1,
+                duration:0.6,
+                delay:0.6,
                 onStart: () => {
                     document.querySelector(".btm_skills .skill_txt li .loading8 .circle").style.animation = 'github 2s 1.4s ease both';
                 },
@@ -172,7 +174,7 @@ gsap.to(profileItems1, {
         onLeave: () => {
             gsap.to(profileItems1, {
                 opacity: 0,
-                y: 0,
+                y: -40,
                 duration: 0.5,
                 stagger: 0.1, // ★ 사라질 때도 순차적으로 ★
             });

@@ -28,7 +28,7 @@ const bnrSlide = new Swiper('.design .left .banner',{
 
 //프로젝트 슬라이드
 const webProject = new Swiper('.web',{
-    autoplay:{delay:3500,},
+    autoplay:{delay:2000,},
     loop: true,
     scrollbar: {
         el: '.web .swiper-scrollbar',
