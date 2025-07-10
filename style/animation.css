@@ -1,11 +1,11 @@
 #main .swiper-wrapper .intro .bg_ani{
-    animation: bg_ani 20s linear infinite;
+    animation: bg_ani 30s linear infinite;
 }
 
 
 @keyframes bg_ani {
     0% {background-position-x: 0;}
-    100% {background-position-x: -1000px;}
+    100% {background-position-x: -2000px;}
 }
 
 /* ================================================ 마우스 스크롤 */
