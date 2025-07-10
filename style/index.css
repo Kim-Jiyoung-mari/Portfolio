@@ -35,6 +35,8 @@
     position: fixed; right: 50px; bottom: 50px; z-index: 700;
     width: 35px; height: 55px; border: 2px solid #222;
     border-radius: 30px;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 .scroll_bg .scroll {
     background-color: #222; width: 5px; height: 10px;
@@ -53,9 +55,11 @@
 
 
 /* ===================================== 메인 1행 인트로*/
-#main .swiper-wrapper .intro {}
+#main .swiper-wrapper .intro {
+    background: url(../image/background.jpg);
+}
 #main .swiper-wrapper .intro h1 {
-    max-width: 530px; margin: 140px auto;
+    max-width: 530px; margin: 159px auto 100px;
     position: relative; top: 30px;
 }
 #main .swiper-wrapper .intro h1 > img {width: 100%;}
