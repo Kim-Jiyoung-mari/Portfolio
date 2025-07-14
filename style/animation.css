@@ -92,31 +92,31 @@
 /* 원형 애니메이션 */
 @keyframes photoShop {
     0% {stroke-dashoffset: 360;}
-    100% {stroke-dashoffset: 75;}
+    100% {stroke-dashoffset: 60;}
 }
 @keyframes illustratior {
     0% {stroke-dashoffset: 360;}
-    100% {stroke-dashoffset: 75;}
+    100% {stroke-dashoffset: 60;}
 }
 @keyframes premiere {
     0% {stroke-dashoffset: 360;}
-    100% {stroke-dashoffset: 100;}
+    100% {stroke-dashoffset: 90;}
 }
 @keyframes figma {
     0% {stroke-dashoffset: 360;}
-    100% {stroke-dashoffset: 110;}
+    100% {stroke-dashoffset: 100;}
 }
 @keyframes html {
     0% {stroke-dashoffset: 360;}
-    100% {stroke-dashoffset: 115;}
+    100% {stroke-dashoffset: 110;}
 }
 @keyframes css {
     0% {stroke-dashoffset: 360;}
-    100% {stroke-dashoffset: 115;}
+    100% {stroke-dashoffset: 110;}
 }
 @keyframes javascript {
     0% {stroke-dashoffset: 360;}
-    100% {stroke-dashoffset: 100;}
+    100% {stroke-dashoffset: 120;}
 }
 @keyframes github {
     0% {stroke-dashoffset: 360;}
