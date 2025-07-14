@@ -11,7 +11,7 @@
 }
 .h_bg header nav {}
 .h_bg header nav > ul {}
-.h_bg header nav > ul li {float: left; padding-right: 50px;}
+.h_bg header nav > ul li {float: left; padding-right: 35px;}
 .h_bg header nav > ul li:last-child {padding: 0;}
 .h_bg header nav > ul li a {}
 .h_bg header nav > ul li .nav_active {
@@ -70,7 +70,8 @@
 }
 
 /* ===================================== 메인 2행 프로필*/
-#main .swiper-wrapper .profile {
+#main .swiper-wrapper .profile {}
+#main .swiper-wrapper .profile .profile_bg {
     padding: 134px 0;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     max-width: 1500px; margin: 0 auto; 
@@ -103,7 +104,7 @@
     text-align: center; margin-bottom: 120px;
 }
 #main .swiper-wrapper .profile .right .right_top > h2 {
-    font-size: 2.69rem; font-weight: 400; line-height: 1.6;
+    font-size: 2.69rem; font-weight: 700; line-height: 1.6;
     padding-bottom: 26px;
 }
 #main .swiper-wrapper .profile .right .right_top > p {
@@ -150,6 +151,51 @@
     width: 60px; height: 60px; margin-bottom: 20px; position: relative; left: 17px;
 }
 #main .swiper-wrapper .profile .right .right_btm .btm_skills > .skill_txt > li {line-height: 1.6;}
+
+/* ===================================== 메인 3행 about*/
+#main .swiper-wrapper .about {}
+#main .swiper-wrapper .about .about_bg{
+    max-width: 1500px; margin: 100px auto; 
+}
+#main .swiper-wrapper .about .title {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+#main .swiper-wrapper .about .title > h2 {
+    margin-bottom: 20px;
+    font-size: 2.69rem; font-weight: 700; line-height: 1.6;
+}
+#main .swiper-wrapper .about .title > p {
+    font-size: 1.25rem; line-height: 1.6;
+}
+#main .swiper-wrapper .about .contents {
+    width: 1500px;
+    margin: 0 auto;
+    display: flex; justify-content: space-between;
+}
+#main .swiper-wrapper .about .contents > li {
+    width: 480px;
+    background-color: #FFF;
+    box-shadow: 0 4px 7px rgba(0,0,0,0.5);
+    text-align: center;
+    border-radius: 100px;
+    height: 500px;
+    display: flex; flex-flow: column nowrap; 
+    align-items: center; justify-content: center;
+}
+#main .swiper-wrapper .about .contents > li > img {}
+#main .swiper-wrapper .about .contents > li .text_wrap {
+    width: 310px; margin: 0 auto;
+}
+#main .swiper-wrapper .about .contents > li .text_wrap h3 {
+    padding: 30px 0 25px;
+    font-size: 2rem; font-weight: 700; line-height: 1.6;
+}
+#main .swiper-wrapper .about .contents > li .text_wrap p {
+    line-height: 1.6;
+}
+#main .swiper-wrapper .about .contents #profile2 {opacity: 0;}
+
 
 /* ===================================== 리디자인 프로젝트 (공통) */
 #main .swiper-wrapper #redesign {
@@ -237,7 +283,7 @@
     bottom: 12px;
 }
 
-/* ===================================== 메인 3행 프로젝트-안다르*/
+/* ===================================== 메인 4행 프로젝트-안다르*/
 #main .swiper-wrapper .andar {}
 #main .swiper-wrapper .andar .project_info {
     background-image: url(../image/andar_left.jpg);
@@ -280,7 +326,7 @@
 #main .swiper-wrapper .flito .project_img {background-color: #E0F9FF; }
 #main .swiper-wrapper .flito .project_img img{}
 
-/* ===================================== 메인 5행 프로젝트-마데카프라임*/
+/* ===================================== 메인 4행 프로젝트-마데카프라임*/
 #main .swiper-wrapper .prime {}
 #main .swiper-wrapper .prime .project_info {
     background-image: url(../image/prime_left.jpg);
@@ -306,7 +352,7 @@
 #main .swiper-wrapper .prime .project_img {background-color: #E0E0FF; }
 #main .swiper-wrapper .prime .project_img img{}
 
-/* ===================================== 메인 6행 프로젝트-오뚜기몰*/
+/* ===================================== 메인 4행 프로젝트-오뚜기몰*/
 #main .swiper-wrapper .otuki {}
 #main .swiper-wrapper .otuki .project_info {
     background-image: url(../image/otuki_left.jpg);
@@ -330,7 +376,7 @@
 #main .swiper-wrapper .otuki .project_img {background-color: #FBF2C4; }
 #main .swiper-wrapper .otuki .project_img img{}
 
-/* ===================================== 메인 7행 디자인*/
+/* ===================================== 메인 6행 디자인*/
 #main .swiper-wrapper .design {}
 #main .swiper-wrapper .design .contents {
     width: 80%; margin: 150px auto 0; display: block;
@@ -401,7 +447,7 @@
 #main .popup_bg .scroll_wrap > img {width: 100%;}
 /* =================================================== 디자인프로젝트 : 팝업 END */
 
-/* ===================================== 메인 8행 아웃트로*/
+/* ===================================== 메인 7행 아웃트로*/
 #main .swiper-wrapper .outro {
     width: 350px; margin: 210px auto;
 }

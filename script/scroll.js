@@ -1,6 +1,8 @@
 /* 프로필 하단 등장 + 스킬 등장 */
 gsap.registerPlugin(ScrollTrigger);
-const profileItems1 = document.querySelectorAll('.profile .right_btm #profile1')
+const profileItems1 = document.querySelectorAll('.profile .right_btm #profile1');
+const profileItems2 = document.querySelectorAll('.about .contents #profile2');
+console.log(profileItems1,profileItems2);
 
 gsap.to(profileItems1, {
     scrollTrigger: {
@@ -182,6 +184,46 @@ gsap.to(profileItems1, {
                 opacity:1,
                 duration:0.4,
                 delay:0.8,
+            });
+        },
+    },
+});
+
+/* about 컨텐츠 등장 */
+gsap.to(profileItems2, {
+    scrollTrigger: {
+        trigger: ".about .contents",
+        start: "top 80%",
+        end: "top 20%",
+        scrub:true,
+        toggleActions: "play reverse restart reverse",
+        markers: false, // 디버깅 마커 (테스트 후 false)
+        onEnter: () => {
+            gsap.to(profileItems2,{
+                opacity: 1,
+                duration: 0.8,
+                stagger: 0.2, // ★ 순차적으로 등장 ★
+            });
+        },
+        onLeaveBack: () => {
+            gsap.to(profileItems2, {
+                opacity: 0,
+                duration: 0.5,
+                stagger: 0.1, // ★ 사라질 때도 순차적으로 ★
+            });
+        },
+        onEnterBack: () => {
+            gsap.to(profileItems2,{
+                opacity: 1,
+                duration: 0.8,
+                stagger: 0.2, // ★ 순차적으로 등장 ★
+            });
+        },
+        onLeave: () => {
+            gsap.to(profileItems2, {
+                opacity: 0,
+                duration: 0.5,
+                stagger: 0.1, // ★ 사라질 때도 순차적으로 ★
             });
         },
     },
