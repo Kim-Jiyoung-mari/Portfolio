@@ -158,8 +158,9 @@
     max-width: 1500px; margin: 100px auto; 
 }
 #main .swiper-wrapper .about .title {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     padding-bottom: 50px;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
 }
 #main .swiper-wrapper .about .title > h2 {
     margin-bottom: 20px;
@@ -176,7 +177,7 @@
 #main .swiper-wrapper .about .contents > li {
     width: 480px;
     background-color: #FFF;
-    box-shadow: 0 4px 7px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
     text-align: center;
     border-radius: 100px;
     height: 500px;
@@ -254,19 +255,19 @@
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > a {
     line-height: 1.6; font-weight: 600;
 }
-#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .proto {
-    background-color: #444; color: #FFF;
-    padding: 10px 15px; border-radius: 10px; margin-right: 10px;
-    transition: all 0.8s;
-}
-#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .proto:hover{
-    padding: 10px 30px;
-}
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .before {
+    background-color: #444; color: #FFF;
     padding: 10px 15px; border-radius: 10px;
     transition: all 0.8s;
 }
 #main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .before:hover{
+    padding: 10px 30px;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .proto {
+    padding: 10px 15px; border-radius: 10px;
+    transition: all 0.8s;
+}
+#main .swiper-wrapper #redesign .project_info .pj_contents .pj_btn > .proto:hover{
     padding: 10px 30px;
 }
 #main .swiper-wrapper #redesign .project_img {
@@ -299,8 +300,8 @@
 #main .swiper-wrapper .andar .project_info .pj_contents .pj_detail > .reponsive > li {}
 #main .swiper-wrapper .andar .project_info .pj_contents .pj_btn {}
 #main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > a {}
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .proto {}
-#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .before {background-color: #FFD7C1;}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .proto {background-color: #FFD7C1;}
+#main .swiper-wrapper .andar .project_info .pj_contents .pj_btn > .before {}
 #main .swiper-wrapper .andar .project_img {background-color: #FFD7C1; }
 #main .swiper-wrapper .andar .project_img img{}
 
@@ -321,9 +322,9 @@
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_detail > .reponsive > li {}
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_btn {}
 #main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > a {}
-#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > .proto {}
-#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > .before {background-color: #E0F9FF;}
-#main .swiper-wrapper .flito .project_img {background-color: #E0F9FF; }
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > .proto {background-color: #E0F9FF;}
+#main .swiper-wrapper .flito .project_info .pj_contents .pj_btn > .before {}
+#main .swiper-wrapper .flito .project_img {background-color: #E0F9FF;}
 #main .swiper-wrapper .flito .project_img img{}
 
 /* ===================================== 메인 4행 프로젝트-마데카프라임*/
@@ -345,11 +346,11 @@
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_detail > .reponsive > dd > span {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_btn {}
 #main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > a {}
-#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .proto {}
-#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .before {
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .proto {
     background-color: #8787A1; color: #FFF;
 }
-#main .swiper-wrapper .prime .project_img {background-color: #E0E0FF; }
+#main .swiper-wrapper .prime .project_info .pj_contents .pj_btn > .before {}
+#main .swiper-wrapper .prime .project_img {background-color: #E0E0FF;}
 #main .swiper-wrapper .prime .project_img img{}
 
 /* ===================================== 메인 4행 프로젝트-오뚜기몰*/
@@ -371,10 +372,41 @@
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_detail > .reponsive > dd > span {}
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn {}
 #main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > a {}
-#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > .proto {}
-#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > .before {background-color: #FBF2C4;}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > .proto {
+    background-color: #FBF2C4;
+}
+#main .swiper-wrapper .otuki .project_info .pj_contents .pj_btn > .before {}
 #main .swiper-wrapper .otuki .project_img {background-color: #FBF2C4; }
 #main .swiper-wrapper .otuki .project_img img{}
+
+/* ===================================== 메인 4행 프로젝트-지그재그*/
+#main .swiper-wrapper .zigzag {}
+#main .swiper-wrapper .zigzag .project_info {
+    background-image: url(../image/zigzag_left.jpg);
+}
+#main .swiper-wrapper .zigzag .project_info .pj_contents {}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_title {}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_title > h2 {}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_title > .pj_txt {}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_detail {}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_detail > .pj_con {}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_detail > .pj_con dt {}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_detail > .pj_con dd {}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_detail > .pj_con dd:nth-of-type(5) {
+    line-height: 1.4;
+}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_detail > .pj_con dd > span {
+    display: flex; 
+}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_detail > .pj_con dd > span:nth-child(2) {
+    margin: 7px 0;
+}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_btn {}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_btn > a {}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_btn > .proto {background-color: #fcc9f1;}
+#main .swiper-wrapper .zigzag .project_info .pj_contents .pj_btn > .before {}
+#main .swiper-wrapper .zigzag .project_img {background-color: #fcc9f1;}
+#main .swiper-wrapper .zigzag .project_img img{}
 
 /* ===================================== 메인 6행 디자인*/
 #main .swiper-wrapper .design {}

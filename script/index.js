@@ -10,7 +10,7 @@ const main = new Swiper('#main',{
             nav[this.activeIndex].classList.add('nav_active')
             setTimeout(()=>{
                 ScrollTrigger.refresh();
-            },0)
+            },0);
         },
     },
 });
@@ -28,7 +28,7 @@ const bnrSlide = new Swiper('.design .left .banner',{
 
 //프로젝트 슬라이드
 const webProject = new Swiper('.web',{
-    autoplay:{delay:2000,},
+    autoplay:{delay:3000,},
     loop: true,
     scrollbar: {
         el: '.web .swiper-scrollbar',
