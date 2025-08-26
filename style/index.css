@@ -13,13 +13,18 @@
 .h_bg header nav > ul {}
 .h_bg header nav > ul li {float: left; padding-right: 35px;}
 .h_bg header nav > ul li:last-child {padding: 0;}
-.h_bg header nav > ul li a {}
+.h_bg header nav > ul li a {font-size: 0.94rem;}
 .h_bg header nav > ul li .nav_active {
     background-color: #222; color: #FFF;
-    padding: 7px 20px; border-radius: 20px;
+    padding: 5px 15px; border-radius: 20px;
 }
 .h_bg header .h_right {}
-.h_bg header .h_right > a {}
+.h_bg header .h_right > a {
+    background-color: #555; color: #FFF;
+    padding: 5px 15px; border-radius: 5px;
+    transition: all 0.8s;
+}
+.h_bg header .h_right > a:hover {padding: 5px 20px;}
 
 /* ===================================== 그룹 선택자 */
 .h_bg header nav > ul li a,
@@ -481,20 +486,31 @@
 
 /* ===================================== 메인 7행 아웃트로*/
 #main .swiper-wrapper .outro {
-    width: 350px; margin: 210px auto;
+    background: url(../image/background.jpg);
 }
 #main .swiper-wrapper .outro > h3 {
-    text-align: center;
-    font-size: 1.44rem; font-weight: 500; line-height: 1.6;
+    max-width: 700px; margin: 150px auto 50px;
 }
-#main .swiper-wrapper .outro > .selfca {width: 300px; padding: 40px 0; margin: 0 auto;}
-#main .swiper-wrapper .outro > .selfca > img {width: 100%;}
+#main .swiper-wrapper .outro > h3 img {width: 100%;}
 #main .swiper-wrapper .outro .info {
-    width: 350px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #F5F5F5;
+    width: 700px; margin: 0 auto; padding: 30px 0;
     display: flex; flex-flow: row nowrap; 
     justify-content: center; align-items: center;
 }
-#main .swiper-wrapper .outro .info .qrcode {width: 100px;}
+#main .swiper-wrapper .outro .info .qrcode {width: 175px;}
 #main .swiper-wrapper .outro .info .qrcode > img {width: 100%;}
-#main .swiper-wrapper .outro .info > .about_txt {padding-left: 20px;}
-#main .swiper-wrapper .outro .info > .about_txt > li {line-height: 1.6;}
+#main .swiper-wrapper .outro .info .me {
+    padding-left: 30px;
+}
+#main .swiper-wrapper .outro .info .me h4 {
+    font-weight: 700; font-size: 2.25rem;
+    margin-bottom: 15px;
+}
+#main .swiper-wrapper .outro .info .me > p {}
+#main .swiper-wrapper .outro .info .me > p:nth-child(2) {padding-bottom: 10px;}
+#main .swiper-wrapper .outro .info .me > p em {
+    margin-right: 10px; font-weight: 500;
+    color: #555;
+}

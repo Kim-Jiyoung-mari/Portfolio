@@ -28,7 +28,7 @@ const bnrSlide = new Swiper('.design .left .banner',{
 
 //프로젝트 슬라이드
 const webProject = new Swiper('.web',{
-    autoplay:{delay:3000,},
+    autoplay:{delay:4000,},
     loop: true,
     scrollbar: {
         el: '.web .swiper-scrollbar',
@@ -68,7 +68,7 @@ const detailSlide = new Swiper('.design .right .detail',{
 // =========================== nav 클릭이벤트
 const nav = document.querySelectorAll('nav a');
 const contact = document.querySelector('.h_right')
-const design = document.querySelector('nav li:nth-child(4) a')
+const design = document.querySelector('nav li:nth-child(5) a')
 console.log(design)
 
 function navRest(){
@@ -91,12 +91,12 @@ nav.forEach((t, i)=>{
 
 design.addEventListener('click',function(e){ //4행 디자인 소개영역으로 이동
     e.preventDefault();
-    main.slideTo(3, 1000);
+    main.slideTo(4, 1000);
 });
 
 contact.addEventListener('click',function(e){ //5행 연락 소개영역으로 이동
     e.preventDefault();
-    main.slideTo(4, 1000);
+    main.slideTo(5, 1000);
 });
 
 //팝업 띄우기
@@ -105,7 +105,6 @@ const bnr = document.querySelectorAll('.banner img');
 const sns = document.querySelectorAll('.sns img');
 const detail = document.querySelectorAll('.detail img');
 const scroll = document.querySelector('.scroll_wrap');
-/* console.log(popup_bg, bnr); */
 
 popup_bg.style.display = 'none' // 팝업 숨기기
 
