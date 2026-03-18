@@ -452,6 +452,12 @@
 #main .swiper-wrapper .neulbo .project_info .pj_contents {}
 #main .swiper-wrapper .neulbo .project_info .pj_contents .pj_title {}
 #main .swiper-wrapper .neulbo .project_info .pj_contents .pj_title > h2 {}
+#main .swiper-wrapper .neulbo .project_info .pj_contents .pj_title > .team {
+    color: #FFFFFF; background-color: rgba(162, 175, 155, 0.4);
+    padding: 10px 20px; border-radius: 20px;
+    display: inline-block;
+    font-size: 0.88rem; font-weight: 300;
+}
 #main .swiper-wrapper .neulbo .project_info .pj_contents .pj_title > .pj_txt {}
 #main .swiper-wrapper .neulbo .project_info .pj_contents .pj_detail {}
 #main .swiper-wrapper .neulbo .project_info .pj_contents .pj_detail > .pj_con {}
